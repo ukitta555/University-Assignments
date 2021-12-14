@@ -1,0 +1,24 @@
+/*
+ * specter2HTML.hpp
+ *
+ *  Created on: Feb 7, 2020
+ *      Author: vlad
+ */
+#ifndef SPECTER2HTML_HPP_
+#define SPECTER2HTML_HPP_
+
+#ifndef string
+#include <string>
+#endif
+
+class Specter2HTML
+{
+public:
+	string specter2String (int* specter, int axes, int maxF,int length, int nonZeroElementCounter);
+	int specter2cout (int* specter, int axes, int maxF,int length, int nonZeroElementCounter);
+	int specter2File (int* specter, int axes, int maxF,int length, int nonZeroElementCounter);
+}
+
+
+
+#endif /* SPECTER2HTML_HPP_ */

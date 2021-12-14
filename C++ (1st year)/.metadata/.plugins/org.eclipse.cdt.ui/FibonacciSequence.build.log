@@ -1,0 +1,6 @@
+21:39:17 **** Build of configuration Debug for project FibonacciSequence ****
+make all 
+make: Nothing to be done for 'all'.
+
+21:39:18 Build Finished. 0 errors, 0 warnings. (took 372ms)
+

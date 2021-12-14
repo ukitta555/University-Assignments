@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Довідка";
+}
+
+<h1>Довідка</h1>
+<hr />
+
+<p style="font-size:19px">
+    <a href="~/Files/GameStop Help.docx" download="GameStop Help">Завантажити керівництво користувача</a>
+</p>
+
+<form method="get" asp-controller="Home" asp-action="Index">
+    <p>
+        <input type="submit" class="btn btn-outline-dark" value="На головну"/>
+    </p>
+</form>

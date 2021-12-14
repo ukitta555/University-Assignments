@@ -1,0 +1,64 @@
+//============================================================================
+// Name        : specterFunc.cpp
+// Author      : Vlad
+// Version     :
+// Copyright   : A project that is too secret to show to anybody
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "functionItself.hpp"
+using namespace std;
+
+/* f return numbers from 0 to 32767.
+ * It should have crashed the program, but it doesn't. (maxF = 30).
+ */
+int f1()
+{
+	return rand();
+}
+
+
+// function that always returns 1
+int f2()
+{
+	return 1;
+}
+
+int f3()
+{
+	return -1;
+}
+int main()
+{
+	Function function;
+	int array[30][30][30] = {};
+
+	// function that returns a value that is out of range of (0, maxF)
+	int (*f1p) (void) = f1;
+	int result = function.universalSpecter(f1p, 20, 30, 3, **array);
+	cout << result << endl;
+
+
+	// function that returns a constant (1) -> 1 non-null element
+	for (int i = 0; i < 30*30*30; i++)
+	{
+		*(**array+i) = 0;
+	}
+	int (*f2p) (void) = f2;
+	result = function.universalSpecter(f2p, 20, 30, 3, **array);
+	cout << result << endl;
+
+	// crashes the program as incorrect parameters were passed as arguments (exit code: -1)
+	for (int i = 0; i < 30*30*30; i++)
+	{
+		*(**array+i) = i;
+	}
+
+	// can use f3p as first parameter and work with memory outside of an array. (bad, don't do that)
+	int (*f3p) (void) = f3;
+	result = function.universalSpecter(f2p, 20, 30, 5, **array); // axes<=3 (!).
+	cout << result << endl;
+
+	return 0;
+}

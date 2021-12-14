@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Головна";
+}
+
+<div class="text-center">
+    <h1 class="display-4">GameStop</h1>
+    <p>Забезпечуємо програмним забезпеченням.</p>
+</div>
+
+<form method="get" asp-controller="Developers" asp-action="Index">
+    <p align="center">
+        <input type="submit" class="btn btn-outline-dark btn-lg" style="width:200px" value="Розробники" />
+    </p>
+</form>
+
+<form method="get" asp-controller="Software" asp-action="Index" asp-route-id="0">
+    <p align="center">
+        <input type="submit" class="btn btn-outline-dark btn-lg" style="width:200px" value="Продукти" />
+    </p>
+</form>
+
+<form method="get" asp-controller="Customers" asp-action="Index">
+    <p align="center">
+        <input type="submit" class="btn btn-outline-dark btn-lg" style="width:200px" value="Покупці" />
+    </p>
+</form>
+
+<form method="get" asp-controller="Purchases" asp-action="Index" asp-route-id="0">
+    <p align="center">
+        <input type="submit" class="btn btn-outline-dark btn-lg" style="width:200px" value="Покупки" />
+    </p>
+</form>
+
+<form method="get" asp-controller="Queries" asp-action="Index">
+    <p align="center">
+        <input type="submit" class="btn btn-outline-dark btn-lg" style="width:200px" value="Запити" />
+    </p>
+</form>
+
+<form method="get" asp-controller="Help" asp-action="Index">
+    <p align="center">
+        <input type="submit" class="btn btn-outline-dark btn-lg" style="width:200px" value="Довідка" />
+    </p>
+</form>

@@ -1,0 +1,5 @@
+*.sln
+CPUImitation_ACS_Lab3/bin/*
+CPUImitation_ACS_Lab3/obj/*
+CPUImitation_ACS_Lab3/*.csproj
+.vs

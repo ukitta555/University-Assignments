@@ -1,0 +1,76 @@
+```{r}
+library(readr)
+friends_episodes_v3 <- read_csv("/home/vlad/Textbooks/3rd year/Data analysis/Labs/lab5/friends_episodes_v3.csv")
+```
+
+```{r}
+library(psych)
+describe(friends_episodes_v3)
+head(friends_episodes_v3)
+episodes <- friends_episodes_v3
+```
+
+```{r}
+episodes$ep_number <- seq.int(nrow(episodes))
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+ts(episodes)
+ggplot(episodes, aes(x=episodes$ep_number, y=episodes$Stars)) + geom_line() + xlab("Episode number") + ylab("Star rating")
+
+```
+
+```{r}
+require(smooth)
+require(Mcomp)
+sma(episodes$Stars, order=3, silent=F)
+sma(episodes$Stars, order=5, silent=F)
+sma(episodes$Stars, order=7, silent=F)
+```
+```{r}
+TS <- ts(data = episodes$Stars, start = 1, frequency = 24) 
+plot(decompose(TS))
+TS %>% ggtsdisplay()
+```
+
+```{r}
+library(tseries)
+adf.test(TS)
+```
+
+
+```{r}
+hw = HoltWinters(TS, alpha = 0.05, beta = 0.05, gamma = 0.05)
+p = predict(hw, 50, prediction.interval = F)
+plot(hw, p, xlab="Епізод", ylab="Рейтинг",
+main="Прогноз за методом Холта-Вінтерса")
+```
+```{r}
+AIC(arima(TS, order = c(1, 0, 1), seasonal=c(1, 0, 1)))
+```
+```{r}
+AIC(arima(TS, order = c(1,0,1), seasonal=c(1, 0, 2)))
+```
+```{r}
+library(forecast)
+fit <- arima(TS, order = c(1, 0, 1), seasonal=c(1, 0, 2))
+```
+
+```{r}
+library(ggplot2)
+#fit %>% forecast(h = 8) %>% autoplot()
+```
+
+
+```{r}
+library(astsa)
+sarima(TS,1,2,8,2,2,2,24)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.

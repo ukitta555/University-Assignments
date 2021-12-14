@@ -1,0 +1,30 @@
+
+Sep 12, 2019 22:00:47.09 NEW SESSION
+Sep 12, 2019 22:00:47.09 /usr/bin/firefox
+Sep 12, 2019 22:00:47.10 which: no netscape in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+Sep 12, 2019 22:00:47.11 which: no mozilla in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+Oct 03, 2019 20:16:21.55 NEW SESSION
+Oct 03, 2019 20:16:21.55 which: no mozilla in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+Oct 03, 2019 20:16:21.58 which: no netscape in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+Oct 03, 2019 20:16:21.58 /usr/bin/firefox
+
+Jan 30, 2020 19:16:22.54 NEW SESSION
+Jan 30, 2020 19:16:22.54 which: no mozilla in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/intel/mediasdk/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+Jan 30, 2020 19:16:22.54 /usr/bin/firefox
+Jan 30, 2020 19:16:22.54 which: no netscape in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/intel/mediasdk/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+Mar 08, 2020 22:49:28.26 NEW SESSION
+Mar 08, 2020 22:49:28.26 which: no mozilla in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+Mar 08, 2020 22:49:28.26 which: no netscape in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+Mar 08, 2020 22:49:28.26 /usr/bin/firefox
+
+Mar 08, 2020 23:03:20.24 NEW SESSION
+Mar 08, 2020 23:03:20.24 which: no mozilla in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+Mar 08, 2020 23:03:20.24 which: no netscape in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+Mar 08, 2020 23:03:20.25 /usr/bin/firefox
+
+Mar 11, 2020 21:35:09.80 NEW SESSION
+Mar 11, 2020 21:35:09.80 which: no mozilla in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+Mar 11, 2020 21:35:09.85 which: no netscape in (/home/vlad/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+Mar 11, 2020 21:35:09.85 /usr/bin/firefox

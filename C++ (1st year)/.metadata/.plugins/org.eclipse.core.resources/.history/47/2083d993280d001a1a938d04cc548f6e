@@ -1,0 +1,30 @@
+/*
+ * Boolba.cpp
+ *
+ *  Created on: Nov 6, 2019
+ *      Author: vlad
+ */
+#include <iostream>
+#line 9 "Boolba.hpp"
+#include "Boolba.hpp"
+#line 11 "Boolba.cpp"
+
+using namespace std;
+
+bool Boolba::isFull() {return ((currentMass_KG == maximalMass_KG) || (currentVolume_M3 == maximalVolume_M3));}
+
+Boolba::Boolba ()
+{
+	currentMass_KG = 0.0;
+	currentVolume_M3 = 0.0;
+}
+
+void Boolba::increaseMass_KG(double mass_KG)
+{
+
+}
+
+void Boolba::increaseVolume_M3(double volume_M3)
+{
+
+}

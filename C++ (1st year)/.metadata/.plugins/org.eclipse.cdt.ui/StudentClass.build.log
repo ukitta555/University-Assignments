@@ -1,0 +1,15 @@
+21:39:22 **** Build of configuration Debug for project StudentClass ****
+make all 
+Building file: ../src/StudentClass.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/StudentClass.d" -MT"src/StudentClass.o" -o "src/StudentClass.o" "../src/StudentClass.cpp"
+Finished building: ../src/StudentClass.cpp
+ 
+Building target: StudentClass
+Invoking: Cross G++ Linker
+g++  -o "StudentClass" ./src/StudentClass.o   
+Finished building target: StudentClass
+ 
+
+21:39:23 Build Finished. 0 errors, 0 warnings. (took 718ms)
+

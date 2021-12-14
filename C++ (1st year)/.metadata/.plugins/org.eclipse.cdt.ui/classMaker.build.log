@@ -1,0 +1,6 @@
+22:42:42 **** Incremental Build of configuration Debug for project classMaker ****
+make all 
+make: Nothing to be done for 'all'.
+
+22:42:43 Build Finished. 0 errors, 0 warnings. (took 416ms)
+

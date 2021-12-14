@@ -1,0 +1,88 @@
+//============================================================================
+// Name        : GoldenUFO.cpp
+// Author      : Vlad
+// Version     :
+// Copyright   : A project that is too secret to show to anybody 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#line 11 "Zolotosyorb.hpp"
+#include "Zolotosyorb.hpp"
+#line 13 "loopSearch.hpp"
+#include "loopSearch.hpp"
+#line 15 "GoldenUFO.cpp"
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+	/*
+	cout << "Enter a random number that will constrain all variables in a simulation: ";
+	int upperBound;
+	cin >> upperBound;
+	*/
+
+	//create new Zolotosyorb
+	Zolotosyorb z;
+	/*
+	 * while (block can be put && boolba isn't full)
+	 * {
+	 *  put block
+	 *  check for drops
+	 *  calculate whether it is needed to be rotated
+	 *  cut (if impediment)
+	 *
+	 *  accept
+	 *  change recuperator energy
+	 *  change boolba's mass and volume
+	 * }
+	 * */
+	int iter = 20;
+	while ((z.getCurrentEnergy_J() > z.getPutEnergy_J()) && (!z.isBoolbaFull()) && (iter-- > 0))
+	{
+		// put block
+		z.putBlock();
+		// calculate the bound for density of the gold block for badDrop();
+		double lowerBoundOfInterval = z.getGoldDensity_GperCM3() - z.getDelta_GperCM3();
+		double upperBoundOfInterval = z.getGoldDensity_GperCM3() + z.getDelta_GperCM3();
+		pair <bool, pair<string, double>> blockTestResult = z.blockFits();
+		if (z.getBlockDensity_GperCM3() < lowerBoundOfInterval || z.getBlockDensity_GperCM3() > upperBoundOfInterval)
+			z.dropBadBlock();
+			else if (!blockTestResult.first)
+					{
+						z.dropGoodBlock();
+					}
+					else
+						{
+							string operations = blockTestResult.second.first; // get the string with operations performed on the block
+							for (int i = 0; i < operations.length(); i++)
+							{
+								if (operations[i] == 't')
+								{
+									z.turnBlock();
+								}
+								else
+									{
+										z.rotateBlock();
+									}
+							}
+							double blockMass_G = z.getBlockMass_G();
+							double maxMassForRecuperator_G = z.howMuchCanRecuperatorMelt_G();
+							if (blockMass_G > maxMassForRecuperator_G)
+							{
+								double differenceInMass_G = blockMass_G - maxMassForRecuperator_G;
+								double volumeOfBlockOne_CM3 = z.calculateVolumeOfBlockThatFits_CM3(differenceInMass_G);
+								double newLength_CM = z.calculateLengthOfFirstBlock_CM (volumeOfBlockOne_CM3);
+								z.cutBlock (newWidth_CM);
+								/* TODO
+								 * implement cutBlock() using newWidth_CM, split in two blocks,
+								 * checker  - checks whether it is useful to cut (?)
+								 * implement method that increases the amount of gold in boolba
+								 */
+							}
+						}
+		//cin.get();
+	}
+	return 0;
+}

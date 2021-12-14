@@ -1,0 +1,7 @@
+20:38:37 **** Incremental Build of configuration Debug for project CLI #7 ****
+make all 
+makefile:44: *** missing separator.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+
+20:38:37 Build Failed. 1 errors, 0 warnings. (took 545ms)
+

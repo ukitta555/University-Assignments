@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Waresoft.Purchase>
+
+@{
+    ViewData["Title"] = "Покупки";
+}
+
+@if (ViewBag.CustomerId == 0)
+{
+    <h1>Покупки</h1>
+}
+else
+{
+    <h1>Покупки @ViewBag.Customer</h1>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            @if (ViewBag.CustomerId == 0)
+            {
+                <th>
+                    Email покупця
+                </th>
+            }
+            <th>
+                Назва продукту
+            </th>
+            <th>
+                Розробник продукту
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @if (ViewBag.CustomerId == 0)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Customer.Email)
+                    </td>
+                }
+                <td>
+                    @Html.DisplayFor(modelItem => item.Software.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Software.Developer.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<table>
+    <tr>
+        @if (ViewBag.CustomerId != 0)
+        {
+            <td>
+                <form method="get" asp-controller="Customers" asp-action="Index">
+                    <input type="submit" class="btn btn-outline-dark" value="Назад до списку покупців" />
+                </form>
+            </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        }
+        <td>
+            <form method="get" asp-controller="Home" asp-action="Index">
+                <input type="submit" class="btn btn-outline-dark" value="На головну" />
+            </form>
+        </td>
+    </tr>
+</table>

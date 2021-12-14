@@ -1,0 +1,15 @@
+21:06:29 **** Incremental Build of configuration Debug for project YellowBelt ****
+make all 
+Building file: ../src/YellowBelt.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/YellowBelt.d" -MT"src/YellowBelt.o" -o "src/YellowBelt.o" "../src/YellowBelt.cpp"
+Finished building: ../src/YellowBelt.cpp
+ 
+Building target: YellowBelt
+Invoking: GCC C++ Linker
+g++  -o "YellowBelt" ./src/YellowBelt.o ./src/phone_number.o ./src/test_runner.o   
+Finished building target: YellowBelt
+ 
+
+21:06:30 Build Finished. 0 errors, 0 warnings. (took 1s.622ms)
+

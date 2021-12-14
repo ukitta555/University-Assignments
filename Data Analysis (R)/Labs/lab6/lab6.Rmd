@@ -1,0 +1,100 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(readr)
+marketing_campaign <- read.table(file = "/home/vlad/Textbooks/3rd year/Data analysis/Labs/lab6/marketing_campaign.csv", sep = "\t", header = T)
+head(marketing_campaign)
+```
+```{r}
+amount_spent = marketing_campaign[1:300,c(10,15)]
+```
+
+```{r}
+amount_spent = scale(amount_spent)
+```
+
+```{r}
+euclidean_dist = dist(amount_spent, method="euclidean")
+clusters_signle_linkage = hclust(d=dist, method="single")
+plot(clusters_signle_linkage, main="Single linkage method", cex=0.25)
+```
+```{r}
+clusters_complete_linkage = hclust(d=dist, method="complete")
+plot(clusters_complete_linkage, main="Complete linkage method", cex=0.25)
+```
+```{r}
+clusters_ward = hclust(d=dist, method="ward.D2")
+plot(clusters_ward, main="Ward's method", cex=0.25)
+```
+```{r}
+clusters_centroid = hclust(d=dist, method="centroid")
+plot(clusters_centroid, main="Centroid method", cex=0.25)
+```
+
+```{r}
+library(cluster)
+library(factoextra)
+library(dplyr)
+library(fossil)
+
+
+clusters_ward_cutree <- cutree(clusters_ward, 3)
+
+# Create scatter plot
+
+ggData <- cbind(amount_spent, clusters_ward_cutree)
+
+ggplot(as.data.frame(ggData), aes(x=as.data.frame(ggData)$MntWines, y=as.data.frame(ggData)$MntGoldProds, color=clusters_ward_cutree)) + geom_point(size=2) + xlab(label = "Wine spending") + ylab(label="Gold products spending")
+
+plot(clusters_ward, main="Ward's method", cex=0.25)
+rect.hclust(clusters_ward, k=3)
+
+```
+
+```{r}
+clusters_kmeans = kmeans(amount_spent, 3, nstart = 30)
+fviz_cluster(clusters_kmeans, data=amount_spent, palette="jco",
+             choose.vars=c("MntWines","MntGoldProds"),
+             ggtheme=theme_minimal())
+
+fviz_nbclust(amount_spent, kmeans, method="gap_stat")
+fviz_nbclust(amount_spent, kmeans, method="silhouette")
+cluster_silhouette <- silhouette(clusters_kmeans$cluster, dist(amount_spent))
+fviz_silhouette(cluster_silhouette)
+```
+```{r}
+
+fviz_nbclust(amount_spent, kmeans, method="wss")
+```
+
+```{r}
+wss <- function(d) {
+  sum(scale(d, scale = FALSE)^2)
+}
+
+wrap <- function(i, hc, x) {
+  cl <- cutree(hc, i)
+  spl <- split(x, cl)
+  wss <- sum(sapply(spl, wss))
+  wss
+}
+
+res <- sapply(seq.int(1, 10), wrap, h = clusters_ward, x = amount_spent)
+plot(seq_along(res), res, type = "b", pch = 19, xlab = "Clusters number", ylab = "WSS")
+
+
+```
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.

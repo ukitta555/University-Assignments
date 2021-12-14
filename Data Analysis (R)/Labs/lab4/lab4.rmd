@@ -1,0 +1,106 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(readr)
+Student_Performance <- read_csv("/home/vlad/Textbooks/3rd year/Data analysis/Labs/lab4/Student Performance new.csv")
+head(Student_Performance, n = 10)
+```
+
+
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(scales)
+
+Student_Performance$mathScore = Student_Performance$`math percentage`
+Student_Performance$parentsEd = Student_Performance$`parental level of education`
+
+
+Student_Performance = subset(Student_Performance, select = c(mathScore, parentsEd))
+
+Student_Performance$parentsEd = as.factor(Student_Performance$parentsEd)
+```
+
+```{r}
+levels(Student_Performance$parentsEd) <- list(
+                              "HighSchool" = "some high school",
+                              "HighSchool" = "high school",
+                              "College" = "some college",
+                              "Associate" = "associate's degree",
+                              "Bachelor" = "bachelor's degree",
+                              "Masters" = "master's degree")
+```
+
+
+```{r}
+
+Means <- data.frame(
+  mathScore = as.numeric(
+    tapply(Student_Performance$mathScore, 
+          Student_Performance$parentsEd, 
+          mean)
+    ),
+  parentsEd = rep("Means", 5))
+
+Student_Performance_Tmp <- rbind(Student_Performance, Means)
+
+Student_Performance_Tmp$parentsEd <- relevel(Student_Performance_Tmp$parentsEd, ref = "HighSchool")
+
+stripchart(mathScore   ~ parentsEd, xlab = "Math test results",  ylab ="Parental education", col=c("red", "green", "blue", "purple", "black"), data = Student_Performance_Tmp)
+
+points(x = Means$mathScore, y = c(6, 6, 6, 6, 6), pch = 19,
+col = c("red", "green", "blue", "purple", "black")) 
+```
+
+```{r}
+library(ggplot2)
+ggplot(Student_Performance, aes(x = mathScore)) + geom_histogram() + facet_wrap(~ parentsEd, ncol = 2)
+
+```
+```{r}
+Student_Performance %>% 
+  group_by(parentsEd) %>%
+  summarise(no_rows = length(parentsEd))
+
+```
+
+```{r}
+ggplot(data = Student_Performance, aes(x = parentsEd, y = mathScore)) + 
+  geom_boxplot(fill = "#e3393c", width = 0.8) + theme_bw()
+
+```
+```{r}
+bartlett.test(mathScore~parentsEd, data = Student_Performance)
+```
+
+```{r}
+model <- lm (mathScore ~ parentsEd, data = Student_Performance)
+
+library(car)
+
+Anova(model, type="II")
+
+summary(model)
+```
+```{r}
+contrasts(Student_Performance$parentsEd)
+```
+
+```{r}
+library(lsmeans)
+
+leastsquare = lsmeans(model, "parentsEd")
+
+Contrasts = list(MastersVSBachelors = c(0,  0, 0, 1,  -1))
+
+contrast(leastsquare, Contrasts)
+
+
+```
+
+

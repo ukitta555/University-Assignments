@@ -1,0 +1,18 @@
+09:08:23 **** Incremental Build of configuration Debug for project testStruct ****
+make all 
+Building file: ../src/testStruct.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testStruct.d" -MT"src/testStruct.o" -o "src/testStruct.o" "../src/testStruct.c"
+../src/testStruct.c: In function ‘main’:
+../src/testStruct.c:21:2: error: unknown type name ‘x’; use ‘struct’ keyword to refer to the type
+   21 |  x x0;
+      |  ^
+      |  struct 
+../src/testStruct.c:21:4: warning: unused variable ‘x0’ [-Wunused-variable]
+   21 |  x x0;
+      |    ^~
+make: *** [src/subdir.mk:20: src/testStruct.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+09:08:23 Build Failed. 2 errors, 1 warnings. (took 634ms)
+

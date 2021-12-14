@@ -1,0 +1,6 @@
+21:39:21 **** Build of configuration Debug for project RandomFib ****
+make all 
+make: Nothing to be done for 'all'.
+
+21:39:22 Build Finished. 0 errors, 0 warnings. (took 374ms)
+

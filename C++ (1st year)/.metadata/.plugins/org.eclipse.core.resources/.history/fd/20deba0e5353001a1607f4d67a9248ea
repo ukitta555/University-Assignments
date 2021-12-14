@@ -1,0 +1,26 @@
+/*
+ * functionItself.hpp
+ *
+ *  Created on: Jan 29, 2020
+ *      Author: vlad
+ */
+
+#ifndef SPECTERBUILDER_HPP_
+#define SPECTERBUILDER_HPP_
+
+#ifndef FUNCTION_HPP_
+#include "function.hpp"
+#endif
+
+class SpecterBuilder
+{
+public:
+	int universalSpecter(Function& function, int length, int maxF,const int axes, int* specterArray);
+private:
+	int GCD(int a, int b);
+	int LCM (int a, int b);
+};
+
+
+
+#endif /* SPECTERBUILDER_HPP_ */

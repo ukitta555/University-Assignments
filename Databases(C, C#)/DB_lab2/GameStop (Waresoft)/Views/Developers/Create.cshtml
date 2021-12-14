@@ -1,0 +1,66 @@
+﻿@model Waresoft.Developer
+
+@{
+    ViewData["Title"] = "Додати розробника";
+}
+
+<h4>Додати розробника</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CountryId" class="control-label"></label>
+                <select asp-for="CountryId" class="form-control" asp-items="@ViewBag.CountryList"></select>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <input type="submit" value="Додати" class="btn btn-outline-dark" />
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-outline-dark" data-toggle="modal"  data-target="#confirm">
+                            Назад до списку
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<form method="get" asp-action="Index">
+    <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Попередження</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body delete-modal-body">
+                    Ви впевнені, що хочете повернутися до списку? Незбережені дані будуть втрачені.
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-outline-dark">Так</button>
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Ні</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

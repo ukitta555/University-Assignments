@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;YellowBelt/src/reverse_sort.h&apos; to &apos;sum_reverse_sort.h&apos;" description="Rename resource &apos;reverse_sort.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/reverse_sort.h" name="sum_reverse_sort.h" stamp="1588070396899" updateReferences="true"/>
+</session>

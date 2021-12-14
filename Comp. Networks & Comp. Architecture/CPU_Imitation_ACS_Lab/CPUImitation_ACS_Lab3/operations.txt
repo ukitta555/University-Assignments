@@ -1,0 +1,11 @@
+push 12
+push 123
+add
+push -12
+push -123
+add
+add
+push 12
+add
+push 34
+add

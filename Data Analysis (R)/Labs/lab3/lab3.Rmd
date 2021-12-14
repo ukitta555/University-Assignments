@@ -1,0 +1,75 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(readr)
+Training_Data <- read_csv("/home/vlad/Textbooks/3rd year/Data analysis/Labs/lab3/Student Performance new.csv")
+View(Training_Data)
+```
+
+```{r}
+head(Training_Data[,6:8])
+```
+
+```{r}
+library(tidyr)
+library(scales)
+cleanDF <- Training_Data[,6:8]
+
+
+plot(~ `math percentage` + `reading score percentage` + `writing score percentage`, data=cleanDF, cex = 0.2, col = alpha("red", 0.5))
+```
+
+
+```{r}
+model <- lm (data = cleanDF, `math percentage` ~ `reading score percentage`) #+ `writing score percentage`)
+
+summary(model)
+```
+
+```{r}
+plot(`math percentage` ~`reading score percentage`, data=cleanDF, cex = 0.5, col = alpha("red", 1))
+abline(a = model$coefficients[1],  b = model$coefficients[2])
+```
+```{r}
+plot(model$fitted.values, cleanDF$`math percentage`, xlab = 'Least-squares estimations', ylab = 'Actual data', main = 'Target-Prediction' )
+abline(c(0,1), col = "red")
+```
+
+```{r}
+plot(model$fitted.values, model$residuals, xlab = 'predictions', ylab = 'residuals', main = "Prediction-Residuals", cex = 0.7)
+abline(0,0, col = "red")
+```
+
+```{r}
+plot(model$residuals, xlab = 'num. of observation', ylab = 'residuals', main = "Entry-Residuals")
+```
+
+```{r}
+plot(model)
+```
+```{r}
+model1 <- lm (data = cleanDF, `math percentage` ~ I (`reading score percentage`*`writing score percentage`))
+
+summary(model1)
+```
+```{r}
+plot(`math percentage` ~I (`reading score percentage`*`writing score percentage`), data=cleanDF, cex = 0.5, col = alpha("red", 1))
+abline(a = model1$coefficients[1],  b = model1$coefficients[2])
+
+
+plot(model1$fitted.values, cleanDF$`math percentage`, xlab = 'Least-squares estimations', ylab = 'Actual data', main = 'Target-Prediction' )
+abline(c(0,1), col = "red")
+
+
+plot(model1$fitted.values, model1$residuals, xlab = 'predictions', ylab = 'residuals', main = "Prediction-Residuals", cex = 0.7)
+abline(0,0, col = "red")
+
+plot(model1$residuals, xlab = 'num. of observation', ylab = 'residuals', main = "Entry-Residuals")
+
+plot(model1)
+```
+
+

@@ -1,0 +1,15 @@
+21:39:25 **** Build of configuration Debug for project xdlmao ****
+make all 
+Building file: ../src/xdlmao.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/xdlmao.d" -MT"src/xdlmao.o" -o "src/xdlmao.o" "../src/xdlmao.cpp"
+Finished building: ../src/xdlmao.cpp
+ 
+Building target: xdlmao
+Invoking: Cross G++ Linker
+g++  -o "xdlmao" ./src/xdlmao.o   
+Finished building target: xdlmao
+ 
+
+21:39:26 Build Finished. 0 errors, 0 warnings. (took 873ms)
+

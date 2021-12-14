@@ -1,0 +1,185 @@
+/*
+ * Zolotosyorb.cpp
+ *
+ *  Created on: Nov 6, 2019
+ *      Author: vlad
+ */
+
+
+#line 10 "Zolotosyorb.hpp"
+#include "Zolotosyorb.hpp"
+#line 12 "loopSearch.hpp"
+#include "loopSearch.hpp"
+#line 14 "GoldenBlock.hpp"
+#include "GoldenBlock.hpp"
+#line 16 "Zolotosyorb.cpp"
+#include <iostream>
+#include <cstdio>
+#include <utility>
+
+#ifndef magicNumber
+#define magicNumber 27
+#endif
+
+using namespace std;
+
+Zolotosyorb::Zolotosyorb ()
+{
+}
+
+void Zolotosyorb::putBlock()
+{
+	// create a block which parameters are constrained by the argument
+	currentBlock.createBlock(magicNumber);
+	cout << "P" << endl;
+	double width = currentBlock.getWidth_CM();
+	double height = currentBlock.getHeight_CM();
+	double length = currentBlock.getLength_CM();
+	double mass = currentBlock.getMass_G();
+	double density = currentBlock.getDensity_GperCM3();
+	printf ("Block parameters: Width - %.1f, Length - %.1f, Height - %.1f, Mass - %.1f, Density - %.1f \n",
+														width, length, height, mass, density);
+	energyCurrent_J -= energyPut_J;
+	printf ("Energy before drop: %.1f, delta: %.1f, current energy: %.1f\n",
+							energyCurrent_J, energyPut_J, energyCurrent_J - energyPut_J);
+}
+
+void Zolotosyorb::dropBadBlock ()
+{
+	if (energyCurrent_J - energyDrop_J >= energyFly_J)
+	{
+		cout << "DB" << endl;
+		printf ("Energy before drop: %.1f, delta: %.1f, current energy: %.1f, density of bad block: %.1f \n",
+				energyCurrent_J, energyDrop_J, energyCurrent_J - energyDrop_J, currentBlock.getDensity_GperCM3());
+		energyCurrent_J -= energyDrop_J;
+	}
+}
+
+// test whether it is useful to rotate or turn the block
+pair<bool, pair <string, double>> Zolotosyorb::blockFits()
+{
+	double energySpent_J = 0;
+	GoldenBlock testBlock (currentBlock); // copy constructor
+	string operations; // string with the sequence of turn / rotate operations encoded
+	for (int i = 0; i < 6; i++)
+	{
+		if (i % 2 == 0)
+		{
+			energySpent_J += energyTurn_J;
+			testBlock.turn();
+			operations += 't';
+		}
+		else
+			{
+				energySpent_J += energyRotate_J;
+				testBlock.rotate();
+				operations += 'r';
+			}
+		if (windowWidth >=  testBlock.getWidth_CM() &&
+			windowHeight >= testBlock.getHeight_CM() &&
+			energyCurrent_J - energySpent_J > energyFly_J)
+		{
+			return make_pair(true, make_pair (operations, energySpent_J));
+		}
+	}
+	return make_pair(false, make_pair(operations, 0));
+}
+
+void Zolotosyorb::dropGoodBlock()
+{
+	// check whether we have the energy to drop the block
+	if (energyCurrent_J - energyCurrent_J >= energyFly_J)
+	{
+		cout << "DG" << endl;
+			printf ("Energy before drop: %.1f, delta: %.1f, current energy: %.1f, parameters of the block: %.1f %.1f %.1f\n",
+						energyCurrent_J, energyDrop_J, energyCurrent_J - energyDrop_J,
+						currentBlock.getHeight_CM(), currentBlock.getWidth_CM(), currentBlock.getLength_CM());
+			energyCurrent_J -= energyDrop_J;
+	}
+}
+
+void Zolotosyorb::turnBlock ()
+{
+	// assuming there is enough energy as blockFits() method returned true
+	cout << 'T' << endl;
+	printf ("Energy before turning: %.1f, delta: %.1f, current energy: %.1f, parameters of the block: %.1f %.1f %.1f\n",
+					energyCurrent_J, energyTurn_J, energyCurrent_J - energyTurn_J,
+					currentBlock.getHeight_CM(), currentBlock.getWidth_CM(), currentBlock.getLength_CM());
+	energyCurrent_J -= energyTurn_J;
+	currentBlock.turn();
+}
+
+void Zolotosyorb::rotateBlock()
+{
+	// assuming there is enough energy as blockFits() method returned true
+	cout << 'R' << endl;
+	printf ("Energy before rotating: %.1f, delta: %.1f, current energy: %.1f, parameters of the block: %.1f %.1f %.1f\n",
+				energyCurrent_J, energyRotate_J, energyCurrent_J - energyRotate_J,
+				currentBlock.getHeight_CM(), currentBlock.getWidth_CM(), currentBlock.getLength_CM());
+	energyCurrent_J -= energyRotate_J;
+	currentBlock.rotate();
+}
+
+
+
+double Zolotosyorb::howMuchCanRecuperatorMelt_G()
+{
+	// m - in grams;
+	// Q1 = dT * (m/1000) * energyHeat; - to heat (J = (K * KG * J) / (K*KG))
+	// Q2 = m * energyMelting; - to melt (J = G * J / G)
+	// Q1+Q2 = m (dT*energyHeat/1000 + energyMelting)
+	// Q1+Q2 = m * ( dT * energyHeat+ 1000 * energyMelting)/1000; Q1+Q2 = recuperator energy
+	// m = 1000*(Q1+Q2) / (dT * energyHeat+1000*energyMelting)
+	double deltaT = meltingTemperature_Celcium - initialTemperature_Celcium;
+	double maxMass_KG = 1000*energyRecuperator_J / (deltaT * energyHeat_JperKelvinKG + 1000*energyMelting_JperG);
+	double maxMass_G = maxMass_KG*1000;
+	return maxMass_G; // in G
+}
+
+double Zolotosyorb::calculateVolumeOfBlockThatFits_CM3(double mass_G)
+{
+	// m = V*p; V = m / p;
+	return mass_G / currentBlock.getDensity_GperCM3();
+}
+
+double Zolotosyorb::calculateLengthOfFirstBlock_CM (double volumeOfBlockOne_CM3)
+{
+	// V = a*b*c; a = V/b*c
+	return volumeOfBlockOne_CM3 / (currentBlock.getWidth_CM() * currentBlock.getHeight_CM());
+}
+
+void Zolotosyorb::cutBlock (double newLength_CM)
+{
+	if (energyFly_J <= energyCurrent_J - energyCut_J)
+	{
+		cout << "C" << endl;
+		printf ("Cutting point: %.1f \n", newLength_CM);
+		energyCurrent_J -= energyCut_J;
+		int height_CM = currentBlock.getHeight_CM();
+		int width_CM = currentBlock.getWidth_CM();
+		int length_CM = currentBlock.getHeight_CM();
+		int density_GperCM3 = currentBlock.getDensity_GperCM3();
+		GoldenBlock block1;
+		block1.setParameters(length_CM, newLength_CM, height_CM, density_GperCM3);
+		// set currentBlock's parameters as before but with reduced width
+		currentBlock.setParameters(length_CM, width_CM - newLength_CM, height_CM, density_GperCM3);
+		//TODO  block1 can be melted by the recuperator. the only thing left to check is whether we have enough
+		// energy to accept it.
+		if (energyFly_J >= energyCurrent_J - energyAccept_J)
+		{
+			cout << "A" << endl;
+			printf ("Energy before accept: %.1f, delta: %.1f, energy after accept: %.1f \n",
+					energyCurrent_J, energyAccept_J, energyCurrent_J - energyAccept_J);
+			energyCurrent_J -= energyAccept_J;
+		}
+	}
+}
+
+double Zolotosyorb::getCurrentEnergy_J() { return energyCurrent_J;}
+double Zolotosyorb::getPutEnergy_J() { return energyPut_J;}
+bool Zolotosyorb::isBoolbaFull() { return boolba.isFull();}
+double Zolotosyorb::getBlockDensity_GperCM3() { return currentBlock.getDensity_GperCM3();}
+double Zolotosyorb::getBlockMass_G () {return currentBlock.getMass_G();}
+double Zolotosyorb::getDelta_GperCM3() {return delta_GperCM3;}
+double Zolotosyorb::getGoldDensity_GperCM3() {return pGold_GperCM3;}
+

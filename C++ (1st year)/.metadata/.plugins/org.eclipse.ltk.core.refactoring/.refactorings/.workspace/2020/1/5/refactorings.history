@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;specterFunc&apos;" deleteContents="true" description="Delete resource &apos;specterFunc&apos;" element1="/specterFunc" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1580241411854"/>&#x0A;<refactoring comment="Delete resource &apos;specterFunc/src/specterFunc.hpp&apos;" deleteContents="false" description="Delete resource &apos;specterFunc/src/specterFunc.hpp&apos;" element1="/specterFunc/src/specterFunc.hpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1580300512368"/>
+</session>

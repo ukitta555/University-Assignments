@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;String Literals/stringLiterals.cpp&apos;" deleteContents="false" description="Delete resource &apos;String Literals/stringLiterals.cpp&apos;" element1="/String Literals/stringLiterals.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1568564214707"/>
+</session>

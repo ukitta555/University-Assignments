@@ -1,0 +1,22 @@
+/*
+ * specter2HTML.cpp
+ *
+ *  Created on: Feb 7, 2020
+ *      Author: vlad
+ */
+
+#include <iostream>
+#include <string>
+#include <cmath>
+#include "specter2HTML.hpp"
+
+
+
+using namespace std;
+
+string specter2HTML::specter2String (int* specter, int axes, int maxF,int length, int nonZeroElementCounter)
+{
+	for (int i = 0; i < )
+	return "xd";
+}
+

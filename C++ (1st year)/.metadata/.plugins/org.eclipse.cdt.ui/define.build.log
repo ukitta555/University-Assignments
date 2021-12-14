@@ -1,0 +1,7 @@
+13:03:20 **** Build of configuration Debug for project define ****
+make all 
+makefile:41: *** Malformed target-specific variable definition.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+
+13:03:21 Build Failed. 1 errors, 0 warnings. (took 588ms)
+

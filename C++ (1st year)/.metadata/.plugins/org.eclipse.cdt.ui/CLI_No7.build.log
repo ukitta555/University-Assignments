@@ -1,0 +1,6 @@
+21:39:17 **** Incremental Build of configuration Debug for project CLI_No7 ****
+make all 
+make: Nothing to be done for 'all'.
+
+21:39:17 Build Finished. 0 errors, 0 warnings. (took 384ms)
+

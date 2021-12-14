@@ -1,0 +1,15 @@
+12:04:33 **** Incremental Build of configuration Debug for project sum ****
+make all 
+Building file: ../src/sum.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -Werror -c -fmessage-length=0 -MMD -MP -MF"src/sum.d" -MT"src/sum.o" -o "src/sum.o" "../src/sum.cpp"
+../src/sum.cpp: In function ‘std::istream& operator>>(std::istream&, Date&)’:
+../src/sum.cpp:92:11: error: unused variable ‘tm’ [-Werror=unused-variable]
+   92 |  uint32_t tm = -1;
+      |           ^~
+cc1plus: all warnings being treated as errors
+make: *** [src/subdir.mk:20: src/sum.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+12:04:34 Build Failed. 2 errors, 0 warnings. (took 1s.261ms)
+

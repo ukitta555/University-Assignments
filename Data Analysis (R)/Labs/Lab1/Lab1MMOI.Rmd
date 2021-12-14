@@ -1,0 +1,169 @@
+---
+title: "LAB 1 MMDP"
+output: html_notebook
+---
+
+## **LAB 1 FOR Mathematical Methods for Data Processing** 
+
+```{r}
+library(readr)
+COVID_19_Survey_Student_Responses <- read_csv("Textbooks/3rd year/Data analysis/Labs/Lab1/COVID-19 Survey Student Responses.csv")
+View(COVID_19_Survey_Student_Responses)
+```
+```{r}
+spec(COVID_19_Survey_Student_Responses)
+```
+
+```{r}
+socialMediaTime <- COVID_19_Survey_Student_Responses$`Time spent on social media`
+```
+
+```{r}
+# na.rm = remove NA entries from column so that mean is calculated properly
+meanSocialMediaUsage <- mean(socialMediaTime, na.rm = T)
+names(meanSocialMediaUsage) <- "Mean time on social media"
+meanSocialMediaUsage
+```
+
+```{r}
+medianSocialMediaUsage <- median(socialMediaTime, na.rm = T)
+names(medianSocialMediaUsage) <- "Median time on social media"
+medianSocialMediaUsage
+```
+
+```{r}
+variance <- var(socialMediaTime, na.rm = T)
+names(variance) <- "Social media time variance"
+
+standardDeviation <- sd(socialMediaTime, na.rm = T)
+names(standardDeviation) <- "Social media time standard deviation"
+
+variance
+standardDeviation
+print("Double-check the result:")
+print(unname(standardDeviation ^ 2))
+```
+
+
+```{r}
+variationCoefficient <- standardDeviation / meanSocialMediaUsage
+names(variationCoefficient) <- "Social media time variation coefficient"
+variationCoefficient
+
+```
+
+
+
+```{r}
+maxTime <- max(socialMediaTime, na.rm = T)
+minTime <- min(socialMediaTime, na.rm = T)
+variationRange = maxTime - minTime
+names(variationRange) <- "Variation range"
+variationRange
+```
+```{r}
+timeIQR = IQR(socialMediaTime)
+names(timeIQR) <- "Time IQR"
+timeIQR
+```
+```{r}
+library(ggplot2)
+boxplot(socialMediaTime, ylab = "Time spent on social media", main="Boxplot for time spent on social media")
+```
+
+```{r}
+library(stringr)
+fiveNumStats <- fivenum(socialMediaTime, na.rm = T)
+print (str_interp("Min value: ${fiveNumStats[1]}"))
+print (str_interp("First quartile: ${fiveNumStats[2]}"))
+print(str_interp("Median: ${fiveNumStats[3]}"))
+print(str_interp("Third quartile: ${fiveNumStats[4]}"))
+print(str_interp("Max value: ${fiveNumStats[5]}"))
+```
+
+```{r}
+print ("First and nineth decimals")
+quantile(socialMediaTime, c(0.1, 0.9))
+```
+
+```{r}
+library(psych)
+timeDistrSkew <- skew(socialMediaTime)
+names(timeDistrSkew) <- "Skew of time distribution"
+timeDistrSkew
+```
+
+```{r}
+library(e1071)
+timeDistrKurtosis <- kurtosis(socialMediaTime)
+names(timeDistrKurtosis) <- "Kurtosis of time distribution"
+timeDistrKurtosis
+```
+
+```{r}
+print ("Assumption: the distribution is exponential distr.")
+```
+
+```{r}
+library(gamlss)
+?gamlss.family
+
+socialMediaTime <- socialMediaTime[socialMediaTime > 0]
+
+histDist(y = socialMediaTime, family = "GA", nbins = "FD", density = TRUE, xlab = 'Time', 
+         ylab = 'Density', main = 'FD rule') 
+histDist(y = socialMediaTime, family = "GA", density = TRUE, xlab = 'Time', 
+         ylab = 'Density', main = 'Default rule') 
+histDist(y = socialMediaTime, family = "GA", nbins = "Scott", density = TRUE, xlab = 'Time', 
+         ylab = 'Density', main = 'Scott rule') 
+
+
+
+```
+
+
+```{r}
+library(MASS)
+fitdistr(socialMediaTime,"gamma")
+
+quantiles <- qgamma(shape = 2.3905, rate = 0.9797, ppoints(n = length(socialMediaTime)))
+qqplot(quantiles, socialMediaTime, xlab = "Theoretical distribution", ylab = "Actual distribution",  
+       col = "darkblue")
+```
+
+
+```{r}
+library(qqplotr)
+
+gg<-ggplot(data = COVID_19_Survey_Student_Responses, mapping = aes(sample = `Time spent on social media`)) +
+  stat_pp_band(distribution = 'gamma', dparams = list(shape = 2.3905, rate = 0.9797)) +
+  stat_pp_line() +
+  stat_pp_point(distribution = 'gamma', dparams = list(shape = 2.3905,rate = 0.9797)) +
+  labs(x = "Probability Points", y = "Cumulative Probability")
+gg
+```
+
+```{r}
+timeEstimation <- fitdistr(COVID_19_Survey_Student_Responses$`Time spent on social media`[COVID_19_Survey_Student_Responses$`Time spent on social media` > 0], "gamma")
+
+ks.test(COVID_19_Survey_Student_Responses$`Time spent on social media`, "pgamma",timeEstimation$estimate[1], timeEstimation$estimate[2])
+```
+
+```{r}
+beforeUni <- 0
+scholarship <- 1900
+salary <- 27000
+
+time <- c(2019:2021)
+money <- c(beforeUni, scholarship, salary)
+lin.mod <- lm(money~time)
+pr.lm <- predict(object = lin.mod, newdata = data.frame(time = c(2019:2025)))
+
+pr.lm
+plot(time, money, "l", las=1, xlab="Time", ylab="Money",  xlim = c(2019,2025), ylim = c(0, 100000))
+lines(pr.lm~c(2019:2025), col="blue", lwd=2)
+
+
+
+```
+

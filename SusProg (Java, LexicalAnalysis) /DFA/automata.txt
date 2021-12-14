@@ -1,0 +1,7 @@
+4
+transition a 0 1
+transition b 1 0
+transition b 0 2
+transition a 1 2
+transition b 2 3
+final 3

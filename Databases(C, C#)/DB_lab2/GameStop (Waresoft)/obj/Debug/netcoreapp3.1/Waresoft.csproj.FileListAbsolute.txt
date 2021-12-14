@@ -1,0 +1,351 @@
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.exe
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.csprojAssemblyReference.cache
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\staticwebassets\Waresoft.StaticWebAssets.Manifest.cache
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\staticwebassets\Waresoft.StaticWebAssets.xml
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.RazorAssemblyInfo.cache
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.RazorAssemblyInfo.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.AssemblyInfoInputs.cache
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.AssemblyInfo.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.TagHelpers.input.cache
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.TagHelpers.output.cache
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.RazorCoreGenerate.cache
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.RazorTargetAssemblyInfo.cache
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.RazorTargetAssemblyInfo.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.csproj.CopyComplete
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.deps.json
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.runtimeconfig.json
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.runtimeconfig.dev.json
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.pdb
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.Views.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.Views.pdb
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.Views.pdb
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.pdb
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.MvcApplicationPartsAssemblyInfo.cache
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Developers\Create.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Developers\Details.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Developers\Edit.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Developers\Index.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Software\Create.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Software\Edit.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Software\Index.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Purchases\Purchase.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Purchases\Index.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Queries\Index.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Queries\Result.cshtml.g.cs
+D:\Женя\Студматериалы\2 КУРС\2 СЕМЕСТР\БД та ІС\Лаба 2\Waresoft\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Help\Index.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.exe
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.deps.json
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.runtimeconfig.json
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.runtimeconfig.dev.json
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.pdb
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.Views.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Waresoft.Views.pdb
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.csprojAssemblyReference.cache
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.AssemblyInfoInputs.cache
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.AssemblyInfo.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.csproj.CoreCompileInputs.cache
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.RazorAssemblyInfo.cache
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.RazorAssemblyInfo.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\staticwebassets\Waresoft.StaticWebAssets.Manifest.cache
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\staticwebassets\Waresoft.StaticWebAssets.xml
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\scopedcss\bundle\Waresoft.styles.css
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.TagHelpers.input.cache
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.TagHelpers.output.cache
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.RazorCoreGenerate.cache
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Developers\Create.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Developers\Details.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Developers\Edit.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Developers\Index.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Help\Index.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Purchases\Index.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Purchases\Purchase.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Queries\Index.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Queries\Result.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Software\Create.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Software\Edit.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\Software\Index.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.RazorTargetAssemblyInfo.cache
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.RazorTargetAssemblyInfo.cs
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.Views.pdb
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.csproj.CopyComplete
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.dll
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.pdb
+C:\Users\Vlad_2\source\repos\C#\Waresoft(DB Lab2)\Waresoft\obj\Debug\netcoreapp3.1\Waresoft.genruntimeconfig.cache

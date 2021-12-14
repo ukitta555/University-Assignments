@@ -1,0 +1,100 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(readr)
+Video_Games_Sales_as_at_22_Dec_2016 <- read_csv("Textbooks/3rd year/Data analysis/Labs/lab2/Video_Games_Sales_as_at_22_Dec_2016.csv")
+View(Video_Games_Sales_as_at_22_Dec_2016)
+```
+
+```{r}
+spec(Video_Games_Sales_as_at_22_Dec_2016)
+```
+```{r}
+library(tidyr)
+library(scales)
+Video_Games_Sales_as_at_22_Dec_2016 <- Video_Games_Sales_as_at_22_Dec_2016 %>% drop_na(`User_Score`, `JP_Sales`, `NA_Sales`, `Critic_Score`)
+
+Video_Games_Sales_as_at_22_Dec_2016 <- subset(Video_Games_Sales_as_at_22_Dec_2016, `User_Score`!="tbd")
+
+plot(~ `Critic_Score` + `JP_Sales` + `NA_Sales` + `User_Score`, data=Video_Games_Sales_as_at_22_Dec_2016, cex = 0.2, col = alpha("red", 0.5))
+```
+```{r}
+library(Hmisc)
+
+Video_Games_Sales_as_at_22_Dec_2016 <- transform(Video_Games_Sales_as_at_22_Dec_2016, User_Score = as.numeric(User_Score))
+
+Video_Games_Sales_as_at_22_Dec_2016
+
+Critic_Score = Video_Games_Sales_as_at_22_Dec_2016$`Critic_Score`
+User_Score = Video_Games_Sales_as_at_22_Dec_2016$`User_Score`
+JP_Sales = Video_Games_Sales_as_at_22_Dec_2016$`JP_Sales`
+NA_Sales = Video_Games_Sales_as_at_22_Dec_2016$`NA_Sales`
+
+df = data.frame(Critic_Score,
+                User_Score, 
+                JP_Sales,
+                NA_Sales)
+
+Hmisc::rcorr(as.matrix(df))
+
+```
+
+```{r}
+library(corrplot)
+corGames = cor(df)  
+corrplot(corGames)
+
+corrplot(corGames, method = 'square')
+```
+```{r}
+library(qgraph)
+qgraph(corGames, minimum=0.1)
+
+```
+```{r}
+library(ggcorrplot)
+library(ggstatsplot)
+ggcorrmat(df, matrix.type = "full", type = "parametric")
+ggcorrmat(df, matrix.type = "full", type = "spearman")
+```
+
+```{r}
+cor.test(df$`Critic_Score`, df$`User_Score`, method="pearson")
+cor.test(df$`Critic_Score`, df$`User_Score`, method="spearman")
+```
+
+```{r}
+cor.test(df$`Critic_Score`, df$`NA_Sales`, method="pearson")
+cor.test(df$`Critic_Score`, df$`NA_Sales`, method="spearman")
+```
+
+
+```{r}
+cor.test(df$`Critic_Score`, df$`JP_Sales`, method="pearson")
+cor.test(df$`Critic_Score`, df$`JP_Sales`, method="spearman")
+```
+
+```{r}
+cor.test(df$`NA_Sales`, df$`JP_Sales`, method="pearson")
+cor.test(df$`NA_Sales`, df$`JP_Sales`, method="spearman")
+```
+
+
+```{r}
+cor.test(df$`User_Score`, df$`JP_Sales`, method="pearson")
+cor.test(df$`User_Score`, df$`JP_Sales`, method="spearman")
+```
+
+
+```{r}
+cor.test(df$`User_Score`, df$`JP_Sales`, method="pearson")
+cor.test(df$`User_Score`, df$`JP_Sales`, method="spearman")
+```
+

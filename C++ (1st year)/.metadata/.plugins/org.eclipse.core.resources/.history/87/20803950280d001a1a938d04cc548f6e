@@ -1,0 +1,27 @@
+/*
+ * Boolba.hpp
+ *
+ *  Created on: Nov 6, 2019
+ *      Author: vlad
+ */
+
+#ifndef BOOLBA_HPP_
+#define BOOLBA_HPP_
+
+#ifndef maximalMass_KG
+#define maximalMass_KG 100.0
+#endif
+
+#ifndef maximalVolume_M3
+#define maximalVolume_M3 100.0
+#endif
+
+class Boolba
+{
+public:
+	double currentVolume_M3;
+	double currentMass_KG;
+	Boolba();
+	bool isFull();
+};
+#endif /* BOOLBA_HPP_ */

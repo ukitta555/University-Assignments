@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="ss"/>
+		<list key="findhistory">
+			<item value="cin"/>
+			<item value="stop"/>
+			<item value="cout"/>
+			<item value="logfile"/>
+			<item value="writeToLogFlag"/>
+			<item value="quit"/>
+			<item value="currentLogfile"/>
+			<item value="this"/>
+			<item value="counter"/>
+			<item value="tableHTML +=&quot;&lt;table&gt; \n&quot;;"/>
+			<item value="string tableHTML = &quot;&quot;;"/>
+			<item value="Fibonacci"/>
+			<item value="function."/>
+			<item value="function"/>
+			<item value="1024"/>
+		</list>
+		<list key="replacehistory">
+			<item value="ss"/>
+			<item value="writeToHistoryFlag"/>
+			<item value="pathToLogfile"/>
+			<item value="generatorFibonacci"/>
+			<item value="specterBuilder"/>
+			<item value="currentBlock.getVolume_CM3()"/>
+			<item value="currentBlock.getLength_CM()"/>
+			<item value="delta_GperCM3"/>
+			<item value="currentBlock.getMass_G()"/>
+			<item value="boolba.isFull()"/>
+			<item value="currentBlock.getDensity_GperCM3()"/>
+			<item value="pGold_GperCM3"/>
+			<item value="energyFly_JpGold_GperCM3"/>
+			<item value="energyFly_J"/>
+			<item value="energyPut_J"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1160"/>
+		<item key="DIALOG_Y_ORIGIN" value="163"/>
+		<item key="DIALOG_WIDTH" value="326"/>
+		<item key="DIALOG_HEIGHT" value="433"/>
+		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|10.0|0|GTK|1|"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="725"/>
+		<item key="DIALOG_Y_ORIGIN" value="373"/>
+	</section>
+</section>

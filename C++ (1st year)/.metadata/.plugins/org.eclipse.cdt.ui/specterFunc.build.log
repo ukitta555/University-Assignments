@@ -1,0 +1,26 @@
+23:40:30 **** Incremental Build of configuration Debug for project specterFunc ****
+make all 
+Building file: ../src/specterFunc.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/specterFunc.d" -MT"src/specterFunc.o" -o "src/specterFunc.o" "../src/specterFunc.cpp"
+../src/specterFunc.cpp: In function ‘void test1()’:
+../src/specterFunc.cpp:46:8: warning: unused variable ‘f1p’ [-Wunused-variable]
+   46 |  int (*f1p) (void) = f1;
+      |        ^~~
+../src/specterFunc.cpp:57:8: warning: unused variable ‘f2p’ [-Wunused-variable]
+   57 |  int (*f2p) (void) = f2;
+      |        ^~~
+../src/specterFunc.cpp: In function ‘void test2()’:
+../src/specterFunc.cpp:84:8: warning: unused variable ‘f1p’ [-Wunused-variable]
+   84 |  int (*f1p) (void) = f1;
+      |        ^~~
+Finished building: ../src/specterFunc.cpp
+ 
+Building target: specterFunc
+Invoking: Cross G++ Linker
+g++  -o "specterFunc" ./src/function.o ./src/generatorFibonacci.o ./src/linearIndex.o ./src/specter2HTML.o ./src/specterBuilder.o ./src/specterFunc.o   
+Finished building target: specterFunc
+ 
+
+23:40:31 Build Finished. 0 errors, 3 warnings. (took 1s.138ms)
+

@@ -1,0 +1,1 @@
+def.o: ../def.cpp

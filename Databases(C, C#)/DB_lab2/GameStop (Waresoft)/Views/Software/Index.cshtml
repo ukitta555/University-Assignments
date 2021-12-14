@@ -1,0 +1,171 @@
+﻿@model IEnumerable<Waresoft.Software>
+
+@{
+    ViewData["Title"] = "Продукти";
+}
+
+@if (ViewBag.DevId == 0)
+{
+    <h1>Продукти</h1>
+}
+else
+{
+    <h1>Продукти @ViewBag.Developer</h1>
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Requirements)
+            </th>
+            @if (ViewBag.DevId == 0)
+            {
+                <th>
+                    @Html.DisplayNameFor(model => model.Developer)
+                </th>
+            }
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var targetId = "#modal" + item.Id;
+            var modalId = "modal" + item.Id;
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Requirements)
+                </td>
+                @if (ViewBag.DevId == 0)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Developer.Name)
+                    </td>
+                }
+                
+                <td>
+                    <form method="get" asp-controller="Purchases" asp-action="Purchase">
+                        <input type="hidden" name="softwareId" value="@item.Id" />
+                        <input type="hidden" name="devId" value="@ViewBag.DevId" />
+                        <p>
+                            <input type="submit" class="btn btn-outline-dark" value="Придбати" style="width:100px" />
+                        </p>
+                    </form>
+                    <form method="get" asp-action="Edit" asp-route-id="@item.Id">
+                        <p>
+                            <input type="hidden" name="devId" value="@ViewBag.DevId" />
+                            <input type="submit" class="btn btn-outline-dark" value="Редагувати" style="width:100px" />
+                        </p>
+                    </form>
+                    <p>
+                        <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="@targetId" style="width:100px">
+                            Видалити
+                        </button>
+                    </p>
+
+                    <div class="modal fade" id="@modalId" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Попередження</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body delete-modal-body">
+                                    Ви впевнені, що хочете видалити цей продукт?
+                                </div>
+                                <div class="modal-footer">
+                                    <form asp-action="Delete" asp-route-id="@item.Id">
+                                        <button type="submit" class="btn btn-outline-dark">Так</button>
+                                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Ні</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<table>
+    <tr>
+        <td>
+            <form method="get" asp-action="Create">
+                <input type="hidden" name="devId" value="@ViewBag.DevId" />
+                <input type="submit" class="btn btn-outline-dark" value="Додати новий" />
+            </form>
+        </td>
+        @if (ViewBag.DevId != 0)
+        {
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <form method="get" asp-controller="Developers" asp-action="Index">
+                    <input type="submit" class="btn btn-outline-dark" value="Назад до списку розробників" />
+                </form>
+            </td>
+        }
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+            <form method="get" asp-controller="Home" asp-action="Index">
+                <input type="submit" class="btn btn-outline-dark" value="На головну" />
+            </form>
+        </td>
+    </tr>
+</table>
+
+<div class="modal fade" id="warning" tabindex="-1" role="alertdialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Повідомлення</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="errorText">
+                Дана реалізація програми носить суто демонстраційний характер, тому завантаження реального програмного забезпечення опущено (запис про покупку в базі даних є імітативним). Щоб скористатися послугами розробника, перейдіть на його офіційний сайт.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">ОК</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        window.addEventListener("load", function () {
+            if ('@ViewBag.Purchased' == 1) {
+                $("#warning").modal();
+            }
+        });
+    </script>
+}

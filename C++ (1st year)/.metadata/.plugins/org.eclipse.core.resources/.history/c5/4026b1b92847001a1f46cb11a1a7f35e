@@ -1,0 +1,23 @@
+//============================================================================
+// Name        : xdlmao.cpp
+// Author      : Vlad
+// Version     :
+// Copyright   : A project that is too secret to show to anybody
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a[2][3]={{0,1,2},
+				{3,4,5}};
+	for (int i = 0; i < 2; i++)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			cout << *(*(a+i)+j) << ' ';
+		}
+		cout << endl;
+	}
+}

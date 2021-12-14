@@ -1,0 +1,12 @@
+20:31:50 **** Incremental Build of configuration Debug for project CLI))0)) ****
+make all 
+Building target: CLI))0))
+Invoking: Cross G++ Linker
+g++  -o "CLI))0))" ./src/CLI))0)).o ./src/command.o ./src/history.o   
+/bin/sh: -c: line 0: syntax error near unexpected token `)'
+/bin/sh: -c: line 0: `g++  -o "CLI))0))" ./src/CLI))0)).o ./src/command.o ./src/history.o   '
+make: *** [makefile:47: CLI))0))] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+20:31:51 Build Failed. 1 errors, 0 warnings. (took 500ms)
+

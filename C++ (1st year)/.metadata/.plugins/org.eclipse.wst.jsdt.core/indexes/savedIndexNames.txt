@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/vlad/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+4151464692.index
+3177472836.index
+2285671402.index
+2917262711.index
+3783413946.index
+898007644.index
