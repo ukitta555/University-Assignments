@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1630844559 source:/home/vlad/codeb/map/main.c
+	<search.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
