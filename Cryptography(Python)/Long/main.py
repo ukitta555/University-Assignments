@@ -10,7 +10,7 @@ from Point import P
 from SoloveiStrassen import solovei_strassen
 from SystemLongComparison import SystemLongComparison
 from RhoPollard import pollard_rho
-from DiscreteLog import pollard_discrete, verify
+from DiscreteLog import bsgs_log, verify
 
 
 def time_execution(func, *args):
@@ -92,19 +92,20 @@ def time_execution(func, *args):
 
 # LAB 2
 
-print("Rho-Pollard Factorization: \n")
-print("Result:", [i.__str__() for i in pollard_rho(LongNumber(87619876495133))])
-print("-----------------------")
-#
-# print("Rho-Pollard Discrete Logarithm: \n")
-# g = LongNumber(11)
-# h = LongNumber(13)
-# p = LongNumber(127)
+# print("Rho-Pollard Factorization: \n")
+# print("Result:", [i.__str__() for i in pollard_rho(LongNumber(87619876495133))])
+# print("-----------------------")
 
-# print("Result:", pollard_discrete(g, h, p))
-# print("-----------------------")
-# print("Result:", verify(g, h, p, LongNumber(5142)))
-# print("-----------------------")
+print("BSGS Discrete Logarithm: \n")
+g = LongNumber(2)
+h = LongNumber(9)
+p = LongNumber(11)
+
+result = bsgs_log(g, h, p)
+print("Result:", result)
+print("-----------------------")
+print("Result:", verify(g, h, p, result))
+print("-----------------------")
 
 # print("Legendre symbol: \n")
 # print("Result:", legendre_symbol(LongNumber(67), LongNumber(113)))
@@ -131,13 +132,13 @@ print("-----------------------")
 # print("Result:", solovei_strassen(LongNumber(60)))
 # print("----------------------")
 
-print("El-Gamal")
-message = P * 1233
-# Bob generates a key pair
-secret_key, public_key = ElGamal.generate_key()
-# Encrypt secret message
-encoded_text = ElGamal.encrypt(public_key, message)
-# Decrypt message
-received_message = ElGamal.decrypt(secret_key, encoded_text)
-# Check if correct
-print(message == received_message)
+# print("El-Gamal")
+# message = P * 1233
+# # Bob generates a key pair
+# secret_key, public_key = ElGamal.generate_key()
+# # Encrypt secret message
+# encoded_text = ElGamal.encrypt(public_key, message)
+# # Decrypt message
+# received_message = ElGamal.decrypt(secret_key, encoded_text)
+# # Check if correct
+# print(message == received_message)
