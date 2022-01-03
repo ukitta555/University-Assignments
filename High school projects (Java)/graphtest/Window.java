@@ -12,8 +12,8 @@ public static void main (String [] argv) {
 	}
 }
 class Pepe extends JFrame{
-	 public int width = 300;
-     public int height = 300;
+	 public int width = 1000;
+     public int height = 800;
      public Image img;
      
 public void loadImage(String src) {

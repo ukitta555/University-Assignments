@@ -1,0 +1,2 @@
+class NoFileProvidedException(Exception):
+    pass

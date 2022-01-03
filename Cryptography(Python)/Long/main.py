@@ -32,24 +32,25 @@ def time_execution(func, *args):
 #
 #
 #
-# a1 = LongNumber('13')
-# b1 = LongNumber('7')
-# m1 = LongNumber('24')
-#
+a1 = LongNumber(31350503)
+b1 = LongNumber(1)
+m1 = LongNumber(32350500)
+
 # a2 = LongNumber('8')
 # b2 = LongNumber('5')
 # m2 = LongNumber('75')
-#
+
 # print('Timing div mod')
 # time_execution(LongNumber.div_mod, LongNumber(
 #     123123123123123123123123123123123123123123123123123123123123), m2, m1)
 #
-#
-# c1 = LongComparison(a1, b1, m1)
+
+c1 = LongComparison(a1, b1, m1)
 # c2 = LongComparison(a2, b2, m2)
-# x, y = c1.solve()
+x, y = c1.solve()
 # q, w = c2.solve()
-# print(x, y)
+print(x, y)
+
 # print(q, w)
 #
 # s = SystemLongComparison([c1,c2])
@@ -95,17 +96,17 @@ def time_execution(func, *args):
 # print("Rho-Pollard Factorization: \n")
 # print("Result:", [i.__str__() for i in pollard_rho(LongNumber(87619876495133))])
 # print("-----------------------")
-
-print("BSGS Discrete Logarithm: \n")
-g = LongNumber(2)
-h = LongNumber(9)
-p = LongNumber(11)
-
-result = bsgs_log(g, h, p)
-print("Result:", result)
-print("-----------------------")
-print("Result:", verify(g, h, p, result))
-print("-----------------------")
+#
+# print("BSGS Discrete Logarithm: \n")
+# g = LongNumber(2)
+# h = LongNumber(9)
+# p = LongNumber(11)
+#
+# result = bsgs_log(g, h, p)
+# print("Result:", result)
+# print("-----------------------")
+# print("Result:", verify(g, h, p, result))
+# print("-----------------------")
 
 # print("Legendre symbol: \n")
 # print("Result:", legendre_symbol(LongNumber(67), LongNumber(113)))
