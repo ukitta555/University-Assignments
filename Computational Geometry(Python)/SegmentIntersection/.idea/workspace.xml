@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae82c343-d658-4917-a34d-23946220f1a7" name="Changes" comment="add test for reading segments + refactor fixtures">
-      <change afterPath="$PROJECT_DIR$/runtime_demo/correctness_demo/utils/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SegmentIntersection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SegmentIntersection.iml" afterDir="false" />
+    <list default="true" id="ae82c343-d658-4917-a34d-23946220f1a7" name="Changes" comment="change design, refactor method naming, add sympy to deps">
+      <change afterPath="$PROJECT_DIR$/algorithms/brute_force/brute_force_solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/intersection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/tests/test_bruteforce.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime_demo/correctness_demo/correctness_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/runtime_demo/correctness_demo/correctness_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime_demo/correctness_demo/draw_segments/draw_segments.py" beforeDir="false" afterPath="$PROJECT_DIR$/runtime_demo/correctness_demo/draw_segments/draw_segments.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime_demo/correctness_demo/read_segments/read_segments.py" beforeDir="false" afterPath="$PROJECT_DIR$/runtime_demo/correctness_demo/read_segments/read_segments.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime_demo/correctness_demo/read_segments/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/runtime_demo/correctness_demo/read_segments/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime_demo/correctness_demo/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/runtime_demo/correctness_demo/utils/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime_demo/utils/type_aliases.py" beforeDir="false" afterPath="$PROJECT_DIR$/runtime_demo/utils/type_aliases.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small_example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/small_example.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +56,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/algorithms" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/runtime_demo/correctness_demo/" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.Run program">
     <configuration name="Run all tests" type="PythonConfigurationType" factoryName="Python">
@@ -122,6 +130,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for algorithms.tests.test_bruteforce.TestBruteforceCorrectness.test_bruteforce_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SegmentIntersection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithms/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;algorithms.tests.test_bruteforce.TestBruteforceCorrectness.test_bruteforce_correctness&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_bruteforce.TestBruteforceCorrectness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SegmentIntersection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithms/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_bruteforce.TestBruteforceCorrectness&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_read_segments.TestReadSegments" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SegmentIntersection" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,9 +205,13 @@
       <item itemvalue="Python.Run program" />
       <item itemvalue="Python tests.Python tests for test_smart_file.TestSmartFile" />
       <item itemvalue="Python tests.Python tests for test_read_segments.TestReadSegments" />
+      <item itemvalue="Python tests.Python tests for algorithms.tests.test_bruteforce.TestBruteforceCorrectness.test_bruteforce_correctness" />
+      <item itemvalue="Python tests.Python tests for test_bruteforce.TestBruteforceCorrectness" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_bruteforce.TestBruteforceCorrectness" />
+        <item itemvalue="Python tests.Python tests for algorithms.tests.test_bruteforce.TestBruteforceCorrectness.test_bruteforce_correctness" />
         <item itemvalue="Python tests.Python tests for test_read_segments.TestReadSegments" />
         <item itemvalue="Python tests.Python tests for test_smart_file.TestSmartFile" />
       </list>
@@ -188,7 +230,7 @@
       <workItem from="1641463729379" duration="1223000" />
       <workItem from="1641670053975" duration="1267000" />
       <workItem from="1641675975844" duration="637000" />
-      <workItem from="1641723242128" duration="10538000" />
+      <workItem from="1641723242128" duration="16389000" />
     </task>
     <task id="LOCAL-00001" summary="SegmentIntersection v0.1 alpha">
       <created>1641250121195</created>
@@ -211,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641731181376</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change design, refactor method naming, add sympy to deps">
+      <created>1641736311399</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641736311399</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +280,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SegmentIntersection v0.1 alpha" />
     <MESSAGE value="add test for reading segments + refactor fixtures" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test for reading segments + refactor fixtures" />
+    <MESSAGE value="change design, refactor method naming, add sympy to deps" />
+    <option name="LAST_COMMIT_MESSAGE" value="change design, refactor method naming, add sympy to deps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -245,8 +295,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SegmentIntersection$Run_all_tests.coverage" NAME="Run all tests Coverage Results" MODIFIED="1641734757204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SegmentIntersection$main.coverage" NAME="Run program Coverage Results" MODIFIED="1641735316795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SegmentIntersection$.coverage" NAME=" Coverage Results" MODIFIED="1641734618876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SegmentIntersection$Run_all_tests.coverage" NAME="Run all tests Coverage Results" MODIFIED="1641761934073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SegmentIntersection$.coverage" NAME=" Coverage Results" MODIFIED="1641759956675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms/tests" />
   </component>
 </project>

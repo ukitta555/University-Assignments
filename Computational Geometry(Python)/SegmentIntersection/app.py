@@ -5,7 +5,7 @@ from PyQt5.QtCore import Qt, QLineF
 from PyQt5.QtGui import QBrush, QPen
 
 import design
-from runtime_demo.correctness_demo.correctness_demo import run_correctness_test
+from runtime_demo.correctness_demo.correctness_demo import run_correctness_test_slow
 from runtime_demo.performance_demo.performance_demo import run_performance_test
 from runtime_demo.utils.type_aliases import DrawingBoardScene
 
@@ -32,5 +32,5 @@ class App(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.Brush = QBrush(Qt.green)
 
     def _connect_buttons(self):
-        self.CorrectnessTestButton_Slow.clicked.connect(lambda: run_correctness_test(self.DrawingBoardScene))
+        self.CorrectnessTestButton_Slow.clicked.connect(lambda: run_correctness_test_slow(self.DrawingBoardScene))
         self.PerformanceTestButton_Slow.clicked.connect(lambda: run_performance_test(self.DrawingBoardScene))

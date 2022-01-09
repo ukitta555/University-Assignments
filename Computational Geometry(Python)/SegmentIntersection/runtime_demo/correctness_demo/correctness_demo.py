@@ -4,10 +4,11 @@ from runtime_demo.correctness_demo.utils.utils import convert_to_scientific
 from runtime_demo.utils.type_aliases import DrawingBoardScene, SymPySegment
 
 
-def run_correctness_test(drawing_board: DrawingBoardScene):
+def run_correctness_test_slow(drawing_board: DrawingBoardScene):
     raw_segments = read_segments_from_file()
+
+
     SegmentDrawingMachine(drawing_board).draw_segments(raw_segments)
     segments: list[SymPySegment] = convert_to_scientific(raw_segments)
-
 
     print(segments[0].intersection(segments[1]))

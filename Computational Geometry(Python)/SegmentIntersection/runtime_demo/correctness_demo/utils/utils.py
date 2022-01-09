@@ -1,8 +1,8 @@
-from runtime_demo.utils.type_aliases import RawSegment, SymPySegment
+from runtime_demo.utils.type_aliases import RawSegment, SymPySegment, SymPyPoint2D
 
 
 def to_endpoints(segment: RawSegment):
-    return (segment[0], segment[1]), (segment[2], segment[3])
+    return SymPyPoint2D(segment[0], segment[1]), SymPyPoint2D(segment[2], segment[3])
 
 
 def convert_to_scientific(raw_segments: list[RawSegment]):
