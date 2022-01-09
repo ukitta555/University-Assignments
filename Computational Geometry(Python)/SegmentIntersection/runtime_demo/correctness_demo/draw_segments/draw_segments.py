@@ -11,9 +11,9 @@ class SegmentDrawingMachine:
 
     def draw_segments(self, segments):
         for segment in segments:
-            self.__draw_segment__(segment)
+            self._draw_segment_(segment)
 
-    def __draw_segment__(self, new_segment):
+    def _draw_segment_(self, new_segment):
         self.drawing_board.addSegment(new_segment)
         logger.info(f'Drew segment {new_segment}')
 

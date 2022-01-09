@@ -7,22 +7,17 @@ from runtime_demo.utils.smart_file.callback_that_uses_file import CallbackThatUs
 from runtime_demo.utils.smart_file.smart_file import SmartFile
 
 
-class MockCallback(implements(CallbackThatUsesFile)):  # type: ignore
-    def run(self, file_handler: TextIO = None, **kwargs):
-        return
-
-
+@patch("test_smart_file.CallbackThatUsesFile")
 class TestSmartFile:
-    @patch("test_smart_file.MockCallback")
-    def test_callback_execution(self, mock, mock_file):
-        instance = mock.return_value
+    def test_callback_execution(self, mock_callback, mock_file):
+        instance = mock_callback.return_value
         instance.run.return_value = 42
-        return_value = SmartFile(mock_file).do_something_using_file(MockCallback())
+        return_value = SmartFile(mock_file).do_something_using_file(CallbackThatUsesFile())
         assert len(instance.run.mock_calls) == 1
         assert return_value == 42
 
     def test_is_file_closed(self, mock_file):
         file = SmartFile(mock_file)
         assert file.is_file_opened is False
-        file.do_something_using_file(MockCallback())
+        file.do_something_using_file(CallbackThatUsesFile())
         assert file.is_file_opened is False

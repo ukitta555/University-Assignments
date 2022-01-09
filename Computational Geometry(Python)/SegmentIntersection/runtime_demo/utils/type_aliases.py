@@ -13,5 +13,13 @@ class DrawingBoardScene(QGraphicsScene):
 
 
 class Segment(QLineF):
-    def __repr__(self):
+    def __str__(self):
         return f"({self.x1()} {self.y1()} {self.x2()} {self.y2()})"
+
+
+class SegmentForMockFile(Segment):
+    def __str__(self):
+        return f"{self.x1()} {self.y1()} {self.x2()} {self.y2()}\n"
+
+
+RawSegment: typing.TypeAlias = tuple[float, float, float, float]
