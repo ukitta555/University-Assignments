@@ -13,14 +13,14 @@ class DrawingBoardScene(QGraphicsScene):
         return super().addLine(line, pen)
 
 
-class SymPySegment(Segment2D):
+class Segment(Segment2D):
     def __eq__(self, other):
         one_way = self.p1 == other.p1 and self.p2 == other.p2
         another = self.p1 == other.p2 and self.p2 == other.p1
         return one_way or another
 
 
-class SymPyPoint2D(Point2D):
+class Point2D(Point2D):
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
 

@@ -1,16 +1,16 @@
 from sympy import Point2D
 
-from runtime_demo.utils.type_aliases import SymPySegment
+from runtime_demo.utils.type_aliases import Segment
 
 
 class Intersection:
     def __init__(self,
                  intersection: Point2D | None,
-                 segment_1: SymPySegment,
-                 segment_2: SymPySegment):
+                 segment_1: Segment,
+                 segment_2: Segment):
         self.intersection: Point2D | None = intersection
-        self.segment1: SymPySegment = segment_1
-        self.segment2: SymPySegment = segment_2
+        self.segment1: Segment = segment_1
+        self.segment2: Segment = segment_2
 
     def __repr__(self):
         if self.intersection:
