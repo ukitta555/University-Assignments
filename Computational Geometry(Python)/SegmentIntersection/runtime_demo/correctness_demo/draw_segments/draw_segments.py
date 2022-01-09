@@ -1,6 +1,6 @@
 import logging
 
-from runtime_demo.utils.type_aliases import DrawingBoardScene
+from runtime_demo.utils.type_aliases import DrawingBoardScene, QtSegment
 
 logger = logging.getLogger(__name__)
 
@@ -10,10 +10,10 @@ class SegmentDrawingMachine:
         self.drawing_board = drawing_board
 
     def draw_segments(self, segments):
-        for segment in segments:
-            self._draw_segment_(segment)
+        for raw_segment in segments:
+            self._draw_segment(QtSegment(*raw_segment))
 
-    def _draw_segment_(self, new_segment):
+    def _draw_segment(self, new_segment):
         self.drawing_board.addSegment(new_segment)
         logger.info(f'Drew segment {new_segment}')
 

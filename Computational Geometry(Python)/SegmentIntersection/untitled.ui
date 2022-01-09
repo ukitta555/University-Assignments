@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -27,16 +27,30 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QPushButton" name="CorrectnessTestButton">
+        <widget class="QPushButton" name="CorrectnessTestButton_Slow">
          <property name="text">
-          <string>Small amount of pts</string>
+          <string>n^2; n = 10</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="PerformanceTestButton">
+        <widget class="QPushButton" name="CorrectnessTestButton_Fast">
          <property name="text">
-          <string>10^4 pts</string>
+          <string>(n+k)logn; n = 10</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="PerformanceTestButton_Slow">
+         <property name="text">
+          <string>n^2; 10^4 pts</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="PerformanceTestButton_Fast">
+         <property name="text">
+          <string>(n+k)logn; 10^4 pts</string>
          </property>
         </widget>
        </item>
@@ -57,9 +71,6 @@
      </item>
     </layout>
    </widget>
-   <zorder>CorrectnessTestButton</zorder>
-   <zorder>PerformanceTestButton</zorder>
-   <zorder>DrawingBoard</zorder>
   </widget>
  </widget>
  <resources/>

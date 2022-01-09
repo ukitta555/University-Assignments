@@ -2,3 +2,4 @@ PyQt5~=5.15.6
 python-interface~=1.6.1
 
 pytest~=6.2.5
+sympy~=1.9

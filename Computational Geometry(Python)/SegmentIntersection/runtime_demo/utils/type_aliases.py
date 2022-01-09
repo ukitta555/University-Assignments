@@ -3,6 +3,7 @@ import typing
 from PyQt5 import QtGui, QtCore, Qt
 from PyQt5.QtCore import QLineF
 from PyQt5.QtWidgets import QGraphicsScene, QGraphicsLineItem
+from sympy import Segment
 
 
 class DrawingBoardScene(QGraphicsScene):
@@ -12,14 +13,17 @@ class DrawingBoardScene(QGraphicsScene):
         return super().addLine(line, pen)
 
 
-class Segment(QLineF):
+SymPySegment: typing.TypeAlias = Segment
+RawSegment: typing.TypeAlias = tuple[float, float, float, float]
+
+
+class QtSegment(QLineF):
     def __str__(self):
         return f"({self.x1()} {self.y1()} {self.x2()} {self.y2()})"
 
 
-class SegmentForMockFile(Segment):
+class SegmentForMockFile(QLineF):
     def __str__(self):
         return f"{self.x1()} {self.y1()} {self.x2()} {self.y2()}\n"
 
 
-RawSegment: typing.TypeAlias = tuple[float, float, float, float]

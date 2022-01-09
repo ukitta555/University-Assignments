@@ -11,19 +11,19 @@ class SmartFile:
         if not callback:
             raise ValueError("Please provide a callback to do something with opened file!")
 
-        self._open_file_()
+        self._open_file()
         result = callback.run(file_handler=self.file_handler, **kwargs)
-        self._close_file_()
+        self._close_file()
         return result
 
-    def _open_file_(self):
+    def _open_file(self):
         if self.is_file_opened:
             return
 
         self.file_handler = open(self.filename, "r")
         self.is_file_opened = True
 
-    def _close_file_(self):
+    def _close_file(self):
         if not self.is_file_opened:
             return
 

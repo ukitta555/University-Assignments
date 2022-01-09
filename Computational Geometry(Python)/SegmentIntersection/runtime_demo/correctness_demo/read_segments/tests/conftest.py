@@ -2,30 +2,25 @@ import os
 
 import pytest
 
-from runtime_demo.utils.type_aliases import RawSegment, SegmentForMockFile, Segment
+from runtime_demo.utils.type_aliases import RawSegment, SegmentForMockFile, QtSegment
+
+
+def float_coordinates(segment):
+    return tuple(map(float, segment))
 
 
 @pytest.fixture
-def mock_raw_segments():
+def mock_segments():
     mock_segments: list[RawSegment] = [
         (0.0, 0.0, 100.0, 100.0),
         (0.0, 100.0, 100.0, 0.0)
     ]
-    return mock_segments
-
-
-@pytest.fixture()
-def mock_segments(mock_raw_segments):
-    return [Segment(*segment) for segment in mock_raw_segments]
-
-
-def float_coordinates(segment):
-    return list(map(float, segment))
+    # sanity check - converting everything to float
+    return list(map(float_coordinates, mock_segments))
 
 
 def stringify_segment(segment: RawSegment):
-    return SegmentForMockFile(*float_coordinates(segment))\
-        .__str__()
+    return SegmentForMockFile(*segment).__str__()
 
 
 def get_stringified_segments(segments: list[RawSegment]):
@@ -36,9 +31,9 @@ def get_stringified_segments(segments: list[RawSegment]):
 
 
 @pytest.fixture
-def mock_file_with_mock_segment_data(mock_raw_segments):
+def mock_file_with_mock_segment_data(mock_segments):
     filename = 'mock.txt'
     with open(filename, 'x+') as f:
-        f.writelines(get_stringified_segments(mock_raw_segments))
+        f.writelines(get_stringified_segments(mock_segments))
     yield filename
     os.remove(filename)
