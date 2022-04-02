@@ -2,7 +2,8 @@ import os
 
 import pytest
 
-from runtime_demo.utils.type_aliases import RawSegment, SegmentForMockFile
+from src.utils.computational_types import RawSegment
+from src.conftest import SegmentForMockFile
 
 
 def stringify_segment(segment: RawSegment):

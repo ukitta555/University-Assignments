@@ -1,4 +1,4 @@
-from runtime_demo.utils.type_aliases import MySegment, MyPoint
+from src.utils.computational_types import MySegment, MyPoint
 
 
 class Intersection:

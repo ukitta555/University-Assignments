@@ -4,14 +4,14 @@ from typing import Any
 logger = logging.getLogger(__name__)
 
 
-class ReadSegments:
+class SegmentReader:
     def __init__(self):
         self.segments: list[tuple[Decimal]] = []
 
     def run(self, filename: str, **kwargs) -> Any:
         with open(filename, 'r') as file:
             for line in file:
-                segment = ReadSegments._parse_coordinates(line)
+                segment = SegmentReader._parse_coordinates(line)
                 self._add_segment(segment)
         return self.segments
 

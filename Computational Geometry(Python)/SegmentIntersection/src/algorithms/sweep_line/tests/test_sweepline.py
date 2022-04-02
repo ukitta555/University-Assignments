@@ -1,5 +1,5 @@
-from algorithms.brute_force.brute_force_solution import find_intersections_slow
-from runtime_demo.correctness_demo.utils.utils import convert_to_scientific
+from src.algorithms.brute_force.brute_force_solution import find_intersections_slow
+from src.correctness_demo.utils.utils import convert_to_scientific
 
 
 class TestSweepLine:

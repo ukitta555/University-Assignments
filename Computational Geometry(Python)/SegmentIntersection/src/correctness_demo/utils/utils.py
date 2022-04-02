@@ -1,4 +1,4 @@
-from runtime_demo.utils.type_aliases import RawSegment, MySegment, MyPoint
+from src.utils.computational_types import RawSegment, MySegment, MyPoint
 
 
 def to_endpoints(segment: RawSegment):

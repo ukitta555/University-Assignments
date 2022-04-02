@@ -1,5 +1,5 @@
-from algorithms.intersection import Intersection
-from runtime_demo.utils.type_aliases import MySegment, MyPoint
+from src.algorithms.common.intersection import Intersection
+from src.utils.computational_types import MySegment, MyPoint
 
 
 def find_intersections_slow(segments: list[MySegment]):

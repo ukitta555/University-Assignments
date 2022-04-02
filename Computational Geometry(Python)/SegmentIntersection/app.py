@@ -3,9 +3,9 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QBrush, QPen
 
 import design
-from runtime_demo.correctness_demo.correctness_demo import run_correctness_test_slow
-from runtime_demo.performance_demo.performance_demo import run_performance_test
-from runtime_demo.utils.type_aliases import DrawingBoardScene
+from src.correctness_demo.correctness_demo import run_correctness_test_slow
+from src.performance_demo.performance_demo import run_performance_test
+from src.utils.graphical_types import DrawingBoardScene
 
 
 class App(QtWidgets.QMainWindow, design.Ui_MainWindow):

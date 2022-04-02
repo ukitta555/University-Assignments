@@ -1,6 +1,6 @@
 import logging
 
-from runtime_demo.utils.type_aliases import DrawingBoardScene, QtSegment
+from src.utils.graphical_types import QtSegment, DrawingBoardScene
 
 logger = logging.getLogger(__name__)
 

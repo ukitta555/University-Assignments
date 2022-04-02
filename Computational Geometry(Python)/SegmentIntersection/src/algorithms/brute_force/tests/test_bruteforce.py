@@ -1,7 +1,7 @@
-from algorithms.brute_force.brute_force_solution import find_intersections_slow
-from algorithms.intersection import Intersection
-from runtime_demo.correctness_demo.utils.utils import convert_to_scientific
-from runtime_demo.utils.type_aliases import MySegment, MyPoint
+from src.algorithms.brute_force.brute_force_solution import find_intersections_slow
+from src.algorithms.common.intersection import Intersection
+from src.correctness_demo.utils.utils import convert_to_scientific
+from src.utils.computational_types import MySegment, MyPoint
 
 
 class TestBruteforceCorrectness:
