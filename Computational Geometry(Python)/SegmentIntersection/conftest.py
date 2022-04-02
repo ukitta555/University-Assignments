@@ -1,10 +1,12 @@
+from decimal import Decimal
+
 import pytest
 
 from runtime_demo.utils.type_aliases import RawSegment
 
 
-def float_coordinates(segment):
-    return tuple(map(float, segment))
+def decimal_coordinates(segment):
+    return tuple(map(Decimal, segment))
 
 
 @pytest.fixture
@@ -15,5 +17,5 @@ def mock_segments():
         (0.0, 0.0, 1.0, 0.0),
         (1.0, 0.0, 1.5, 0.0),
     ]
-    # sanity check - converting everything to float
-    return list(map(float_coordinates, mock_segments))
+    # sanity check - converting everything to Decimal
+    return list(map(decimal_coordinates, mock_segments))

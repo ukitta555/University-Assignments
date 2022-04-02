@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from runtime_demo.utils.type_aliases import RawSegment, SegmentForMockFile, QtSegment
+from runtime_demo.utils.type_aliases import RawSegment, SegmentForMockFile
 
 
 def stringify_segment(segment: RawSegment):
@@ -17,7 +17,7 @@ def get_stringified_segments(segments: list[RawSegment]):
 
 
 @pytest.fixture
-def mock_file_with_mock_segment_data(mock_segments):
+def mock_file_with_segment_data(mock_segments):
     filename = 'mock.txt'
     with open(filename, 'x+') as f:
         f.writelines(get_stringified_segments(mock_segments))

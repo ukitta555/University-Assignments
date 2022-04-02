@@ -1,7 +1,5 @@
-import sys
-
 from PyQt5 import QtWidgets
-from PyQt5.QtCore import Qt, QLineF
+from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QBrush, QPen
 
 import design

@@ -1,7 +1,7 @@
 from algorithms.brute_force.brute_force_solution import find_intersections_slow
 from algorithms.intersection import Intersection
 from runtime_demo.correctness_demo.utils.utils import convert_to_scientific
-from runtime_demo.utils.type_aliases import Segment, Point2D
+from runtime_demo.utils.type_aliases import MySegment, MyPoint
 
 
 class TestBruteforceCorrectness:
@@ -10,18 +10,18 @@ class TestBruteforceCorrectness:
         assert len(intersections) == 3
         assert intersections == [
             Intersection(
-                Point2D(1, 1),
-                Segment(Point2D(0, 0), Point2D(2, 2)),
-                Segment(Point2D(2, 0), Point2D(0, 2)),
+                MyPoint(1, 1),
+                MySegment(MyPoint(0, 0), MyPoint(2, 2)),
+                MySegment(MyPoint(2, 0), MyPoint(0, 2)),
             ),
             Intersection(
-                Point2D(0, 0),
-                Segment(Point2D(0, 0), Point2D(2, 2)),
-                Segment(Point2D(0, 0), Point2D(1, 0)),
+                MyPoint(0, 0),
+                MySegment(MyPoint(0, 0), MyPoint(2, 2)),
+                MySegment(MyPoint(0, 0), MyPoint(1, 0)),
             ),
             Intersection(
-                Point2D(1, 0),
-                Segment(Point2D(0, 0), Point2D(1, 0)),
-                Segment(Point2D(1, 0), Point2D(1.5, 0)),
+                MyPoint(1, 0),
+                MySegment(MyPoint(0, 0), MyPoint(1, 0)),
+                MySegment(MyPoint(1, 0), MyPoint(1.5, 0)),
             ),
         ]

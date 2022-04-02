@@ -1,24 +1,22 @@
-from sympy import Point2D
-
-from runtime_demo.utils.type_aliases import Segment
+from runtime_demo.utils.type_aliases import MySegment, MyPoint
 
 
 class Intersection:
-    def __init__(self,
-                 intersection: Point2D | None,
-                 segment_1: Segment,
-                 segment_2: Segment):
-        self.intersection: Point2D | None = intersection
-        self.segment1: Segment = segment_1
-        self.segment2: Segment = segment_2
+    def __init__(
+            self,
+            intersection: MyPoint | None,
+            segment_1: MySegment,
+            segment_2: MySegment
+    ):
+        self.intersection: MyPoint | None = intersection
+        self.segment1: MySegment = segment_1
+        self.segment2: MySegment = segment_2
 
-    def __repr__(self):
-        if self.intersection:
-            return f"{self.intersection.__repr__()}, {self.segment1.__repr__()}, {self.segment2.__repr__()}"
-        return "None"
+    def __str__(self):
+        return f"{self.intersection.__str__()}, {self.segment1.__str__()}, {self.segment2.__str__()}"
 
     def __eq__(self, other):
-        intersection = self.intersection == other.intersection
-        segment1 = self.segment1 == other.segment1
-        segment2 = self.segment2 == other.segment2
-        return intersection and segment1 and segment2
+        are_intersections_equal = self.intersection == other.intersection
+        is_segment1_equal = self.segment1 == other.segment1
+        is_segment2_equal = self.segment2 == other.segment2
+        return are_intersections_equal and is_segment1_equal and is_segment2_equal
