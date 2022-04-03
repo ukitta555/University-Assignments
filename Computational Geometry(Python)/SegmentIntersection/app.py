@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QBrush, QPen
+from PyQt5.QtGui import QBrush, QPen, QTransform
 
 import design
 from src.correctness_demo.correctness_demo import run_correctness_test_slow
@@ -20,6 +20,10 @@ class App(QtWidgets.QMainWindow, design.Ui_MainWindow):
 
     def _init_canvas(self):
         self.DrawingBoardScene: DrawingBoardScene = DrawingBoardScene()
+
+        matrix = QTransform(1, 0, 0, 0, -1, 0, 0, 0, 1)
+
+        self.DrawingBoard.setTransform(matrix)
         self.DrawingBoard.setScene(self.DrawingBoardScene)
 
     def _init_pens(self):

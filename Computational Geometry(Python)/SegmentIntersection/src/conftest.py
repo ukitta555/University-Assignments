@@ -18,7 +18,6 @@ def mock_segments():
         (0.0, 0.0, 1.0, 0.0),
         (1.0, 0.0, 1.5, 0.0),
     ]
-    # sanity check - converting everything to Decimal
     return list(map(decimal_coordinates, mock_segments))
 
 
