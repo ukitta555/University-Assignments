@@ -1,0 +1,58 @@
+\documentclass{SHVpaper}
+\begin{document}
+% Так позначається початок рядка із коментарем. Він не компілюється. Далі по тексту описуються особливості використання стилю тез
+% Просимо уникати використання додаткових стильових пакетів
+% Просимо НЕ використовувати власні макроси чи команди
+
+%
+\section {Using TDD compared to manual testing} 
+
+\authors {Vladyslav Nekriach, Victoria Kovalenko} 
+
+%Перед відправкою тез, будь ласка, переконайтесь у відсутності орфографічних та змістовних помилок, та скомпілюйте документ в pdf.
+%На електронну пошту надішліть, будь ласка, tex-файл та pdf-файл.
+%Далі наводимо короткий огляд основних результатів, які планується представити в доповіді
+%Обсяг скомпільованих тез НЕ повинен перевищувати одну сторінку
+% Коротко формулюємо проблему дослідження та обґрунтування її
+%актуальності. Далі формулюємо основні одержані результати.
+%Пам'ятаємо, що обсяг скомпільованих тез НЕ повинен перевищувати
+%одну сторінку.
+
+Authors of software engineering books considered classic \cite{fowler_refactoring, martin_clean_code} are passionate advocates for the adoption of 'clean' code and XP practices. This paper proposes a hypothesis that one of the pillars of XP - Test Driven Development \cite{fowler_tdd} is a better alternative compared to manual testing.
+ 
+The experiment has been set up in the following way: we have been writing code for 3 months only using manual testing before handing in the results to the manual QA team, and for 3 months we have been using TDD(mostly writing small unit tests and occasionally writing integration tests) and then passing a new version to the manual QA. Most of the features we worked on were small incremental changes of the project or small bug fixes.
+
+The results of using this technique are quite fascinating as all the 11 features that had been made with the use of TDD made it to the production environment without any bugs noticed by manual QA. Meanwhile, the results for the features for which we used manual testing aren't as good - only 9 did. 
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c| }
+\hline
+             &  Passed manual QA      &           Sent back      \\ 
+\hline
+ Follows TDD &     11                 &              0           \\
+\hline
+ Manual dev testing    &     9                  &              6           \\
+\hline
+
+\end{tabular}
+\end{center}
+
+
+Based on the results of the experiment, authors of this paper propose a hypothesis that TDD is a better and an easier alternative for developers compared to manual testing of code, as it reduces the possibility of human error and simplifies implementation of the code required to pass the test.
+
+\begin{thebibliography}{5}
+\bibitem{fowler_refactoring} Fowler, Martin and Kent Beck. Refactoring, 2nd edition. Addison-Wesley, 2019. 
+\bibitem{martin_clean_code} Martin, Robert. Clean Code. Pearson, 2008.
+\bibitem{fowler_tdd} Fowler M., short article on Test Driven Development and its benefits.
+https://martinfowler.com/bliki/TestDrivenDevelopment.html
+\end{thebibliography}
+
+\subsection{Authors}
+
+\author {Vladyslav Nekriach}{3rd year student, BSc Computer Science, Faculty of Computer Science and Cybernetics, Taras Shevchenko National University of Kyiv}{nekriach\_vv@knu.ua}
+
+
+\author {Victoria Kovalenko}{3rd year student, BSc Computer Science, Faculty of Computer Science and Cybernetics, Taras Shevchenko National University of Kyiv}{victoria.kovalenko@knu.ua}
+
+\end{document}
