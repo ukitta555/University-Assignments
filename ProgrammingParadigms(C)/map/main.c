@@ -291,6 +291,5 @@ int main(int argc, char **argv)
 
     printf("Diff tree \n");
     twalk(diffMap, actionPrint);
-
     return 0;
 }

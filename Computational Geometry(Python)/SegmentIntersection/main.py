@@ -1,7 +1,7 @@
 import logging
 import sys
+
 from PyQt5 import QtWidgets
-import design
 from app import App
 
 
@@ -10,7 +10,7 @@ def main():
     app = QtWidgets.QApplication(sys.argv)
     window = App()
     window.show()
-    app.exec_()
+    sys.exit(app.exec_())
 
 
 # Press the green button in the gutter to run the script.

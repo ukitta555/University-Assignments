@@ -5,7 +5,7 @@ def cross_2d(a: Vector, b: Vector):
     return a.x * b.y - a.y * b.x
 
 
-def orientation(vertex: Vector, a: Vector , b: Vector):
+def orientation(vertex: Vector, a: Vector, b: Vector):
     p1: Vector = a - vertex
     p2: Vector = b - vertex
     area = cross_2d(p1, p2)
