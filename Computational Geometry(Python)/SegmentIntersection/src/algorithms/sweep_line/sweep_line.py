@@ -58,7 +58,7 @@ class SweepLine:
             self.intersections.add(event_point)
 
         if len(event.lower) + len(event.contains) == 0:
-            self._handle_upper_point_corner_case(event, event_point)
+            self._handle_upper_point_corner_case(event)
 
         # logger.info(f'Found intersection: {event_point}')
 
@@ -69,7 +69,7 @@ class SweepLine:
         else:
             self._handle_contained_point_case(event=event, event_point=event_point)
 
-    def _handle_upper_point_corner_case(self, event: LCUEvent, event_point):
+    def _handle_upper_point_corner_case(self, event: LCUEvent):
         for upper_segment in list(event.upper.keys()):
             left_neighbour = self.sweep_line_order_tree.nearest_left_to_segment(upper_segment)
             right_neighbour = self.sweep_line_order_tree.nearest_right_to_segment(upper_segment)
@@ -191,7 +191,7 @@ class SweepLine:
 
     @staticmethod
     def _intersection_is_to_the_right_of_the_sweepline_hitpoint(intersection, sweep_line_hitpoint):
-        return abs(intersection.y - sweep_line_hitpoint.y) < EPSILON and intersection.x > \
+        return abs(intersection.y - sweep_line_hitpoint.y) < Decimal(0.0005) and intersection.x > \
                sweep_line_hitpoint.x
 
     @staticmethod

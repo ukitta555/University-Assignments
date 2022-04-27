@@ -24,7 +24,7 @@ class MyPoint(Point2D):
         return Point2D.__new__(cls, x, y, **kwargs)
 
     def __eq__(self, other):
-        return abs(self.x - other.x) < EPSILON and abs(self.y - other.y) < EPSILON
+        return abs(self.x - other.x) < Decimal(0.000005) and abs(self.y - other.y) < Decimal(0.000005)
 
     def __hash__(self):
         return int(self.x * 31 + self.y)
