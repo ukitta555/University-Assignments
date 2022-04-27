@@ -56,7 +56,11 @@ class SweepLine:
     ):
         if len(event.lower) + len(event.contains) + len(event.upper) > 1:
             self.intersections.add(event_point)
-            # logger.info(f'Found intersection: {event_point}')
+
+        if len(event.lower) + len(event.contains) == 0:
+            self._handle_upper_point_corner_case(event, event_point)
+
+        # logger.info(f'Found intersection: {event_point}')
 
         self._fix_sweep_line_ordering(event_point, event)
 
@@ -65,19 +69,41 @@ class SweepLine:
         else:
             self._handle_contained_point_case(event=event, event_point=event_point)
 
+    def _handle_upper_point_corner_case(self, event: LCUEvent, event_point):
+        for upper_segment in list(event.upper.keys()):
+            left_neighbour = self.sweep_line_order_tree.nearest_left_to_segment(upper_segment)
+            right_neighbour = self.sweep_line_order_tree.nearest_right_to_segment(upper_segment)
+
+            if left_neighbour:
+                left_intersection = left_neighbour.intersection(upper_segment)
+                if left_intersection:
+                    left_intersection = MyPoint(left_intersection[0].x, left_intersection[0].y)
+                    self.intersections.add(left_intersection)
+                    if not self.event_queue.get(left_intersection):
+                        new_event = LCUEvent()
+
+                        self.event_queue[left_intersection] = new_event
+                    self.event_queue[left_intersection].add_to_C(left_neighbour)
+            elif right_neighbour:
+                right_intersection = right_neighbour.intersection(upper_segment)
+                if right_intersection:
+                    right_intersection = MyPoint(right_intersection[0].x, right_intersection[0].y)
+                    self.intersections.add(right_intersection)
+                    if not self.event_queue.get(right_intersection):
+                        new_event = LCUEvent()
+                        self.event_queue[right_intersection] = new_event
+                    self.event_queue[right_intersection].add_to_C(right_neighbour)
+
     def _fix_sweep_line_ordering(self, event_point: MyPoint, event: LCUEvent):
         for segment in event.lower:
             self.sweep_line_order_tree.remove(segment)
 
         for segment in event.contains:
             self.sweep_line_order_tree.remove(segment)
-            # assert not self.sweep_line_order_tree.get(segment)
 
-
-        MySegment.set_sweep_level(event_point.y - Decimal(0.000005))
+        MySegment.set_sweep_level(event_point.y - Decimal(0.00005))
 
         for segment in event.contains:
-            # assert not self.sweep_line_order_tree.get(segment)
             self.sweep_line_order_tree.insert(segment)
 
         for segment in event.upper:
@@ -100,6 +126,7 @@ class SweepLine:
         rightest_C_segment = max(list(event.contains.keys()) + list(event.upper.keys()))
         leftest_C_segment = min(list(event.contains.keys()) + list(event.upper.keys()))
 
+
         left_neighbour = self.sweep_line_order_tree.nearest_left_to_segment(leftest_C_segment)
         right_neighbour = self.sweep_line_order_tree.nearest_right_to_segment(rightest_C_segment)
 
@@ -111,7 +138,7 @@ class SweepLine:
     def _nearest_left_to_point(self, point: MyPoint):
         fake_segment: MySegment = MySegment(
             point,
-            MyPoint(point.x, point.y - EPSILON),
+            MyPoint(point.x, point.y - Decimal(0.09)),
         )
 
         self.sweep_line_order_tree.insert(fake_segment)
@@ -123,7 +150,7 @@ class SweepLine:
     def _nearest_right_to_point(self, point: MyPoint):
         fake_segment: MySegment = MySegment(
             point,
-            MyPoint(point.x, point.y - EPSILON),
+            MyPoint(point.x, point.y - Decimal(0.09)),
         )
 
         self.sweep_line_order_tree.insert(fake_segment)
@@ -142,6 +169,7 @@ class SweepLine:
 
         if intersection:
             intersection = intersection[0]
+
 
         if intersection and \
             (SweepLine._intersection_is_below_sweep_line(intersection, event_point) or

@@ -7,11 +7,11 @@ class LCUEvent:
         self.contains: SortedSet[MySegment] = SortedSet()
         self.upper: SortedSet[MySegment] = SortedSet()
 
-    def add_to_L(self, segment):
+    def add_to_L(self, segment: MySegment):
         self.lower.insert(segment)
 
-    def add_to_C(self, segment):
+    def add_to_C(self, segment: MySegment):
         self.contains.insert(segment)
 
-    def add_to_U(self, segment):
+    def add_to_U(self, segment: MySegment):
         self.upper.insert(segment)

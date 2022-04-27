@@ -8,6 +8,7 @@ from bintrees import FastRBTree
 from sympy import Point2D, Segment2D
 from sympy.core.numbers import ComplexInfinity, NaN
 
+from src.const import EPSILON
 from src.utils.red_black_library import Deck
 
 
@@ -23,7 +24,7 @@ class MyPoint(Point2D):
         return Point2D.__new__(cls, x, y, **kwargs)
 
     def __eq__(self, other):
-        return abs(self.x - other.x) < Decimal(0.00005) and abs(self.y - other.y) < Decimal(0.00005)
+        return abs(self.x - other.x) < EPSILON and abs(self.y - other.y) < EPSILON
 
     def __hash__(self):
         return int(self.x * 31 + self.y)
@@ -75,9 +76,10 @@ class SortedSet(FastRBTree):
     def _nonexact_floor(self, key):
         try:
             # return next(self.irange(maximum=key, inclusive=(True, False), reverse=True))
-            exact_floor = super().ceiling_key(key)
+            exact_floor = super().floor_key(key)
             if exact_floor == key:
                 return super().prev_key(key)
+            return exact_floor
         except KeyError:
             return None
 
@@ -87,6 +89,7 @@ class SortedSet(FastRBTree):
             exact_ceiling = super().ceiling_key(key)
             if exact_ceiling == key:
                 return super().succ_key(key)
+            return exact_ceiling
         except KeyError:
             return None
 
@@ -141,20 +144,6 @@ class MySegment(Segment2D):
         """
         Return X coordinate of intersection between sweep line on point.y level and this segment
         """
-        # ray = Ray2D(MyPoint(0, self.sweep_level), MyPoint(1, self.sweep_level))
-        # intersection = ray.intersection(self)
-        # if intersection:
-        #     if type(intersection[0]) is Point2D:
-        #         return intersection[0].x
-        #
-        #     if type(intersection[0]) is Segment2D:
-        #         intersection = MySegment(
-        #             intersection[0].p1,
-        #             intersection[0].p2
-        #         )
-        #         return intersection.start.x
-        # return 9999999999999999999
-
         direction: Vector = self.end - self.start
 
         try:

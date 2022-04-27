@@ -1,3 +1,3 @@
 from decimal import Decimal
 
-EPSILON = Decimal(0.0005)
+EPSILON = Decimal(0.05)
