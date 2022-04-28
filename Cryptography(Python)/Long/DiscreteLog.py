@@ -1,8 +1,3 @@
-"""
-This is a simple, yet straight forward implementation of Pollard's rho algorithm for discrete logarithms
-It computes X such that G^X = H mod P.
-p must be a safe prime, such that there is a prime q for which p = 2q+1 holds true.
-"""
 import copy
 
 from LongNumber import LongNumber
