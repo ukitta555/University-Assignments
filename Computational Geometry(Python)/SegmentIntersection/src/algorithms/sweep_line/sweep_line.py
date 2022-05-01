@@ -4,7 +4,6 @@ from math import cos, sin
 from decimal import Decimal
 import random
 
-from src.const import EPSILON
 from src.algorithms.common.lcuevent import LCUEvent
 from src.utils.computational_types import MySegment, MyPoint, SortedSet, SortedDict
 
