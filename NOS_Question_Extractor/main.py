@@ -1,5 +1,8 @@
 from moviepy.editor import *
 
+from secret import DEEPGRAM_API_KEY
+
+
 def mp4_to_mp3(mp4, mp3):
     mp4_without_frames = AudioFileClip(mp4)
     mp4_without_frames.write_audiofile(mp3)
@@ -10,7 +13,6 @@ from deepgram import Deepgram
 import asyncio, json
 
 # The API key you created in step 1
-DEEPGRAM_API_KEY = '42bd45f27eb3a704406f4b7761d18e889b880cb1'
 
 # Replace with your file path and audio mimetype
 VIDEO = "04-NOS.720p.mov"
