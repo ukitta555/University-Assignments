@@ -10,7 +10,7 @@ def mp4_to_mp3(mp4, mp3):
 
 
 from deepgram import Deepgram
-import asyncio, json
+import asyncio
 
 # The API key you created in step 1
 
