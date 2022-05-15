@@ -15,7 +15,7 @@ import asyncio
 # The API key you created in step 1
 
 # Replace with your file path and audio mimetype
-VIDEO = "04-NOS.720p.mov"
+VIDEO = "08-NOS.720p.mov"
 PATH_TO_FILE = "audio.mp3"
 MIMETYPE = 'audio/mp3'
 
@@ -35,7 +35,7 @@ async def main():
         print('To learn more about customizing your transcripts check out developers.deepgram.com')
 
         response = await dg_client.transcription.prerecorded(source, options)
-        with open("04-NOS.txt", 'w', encoding='utf-8') as f:
+        with open("08-NOS.txt", 'w', encoding='utf-8') as f:
             response = response.get('results').get('channels')[0].get('alternatives')[0].get('transcript').split('.')
             for line in response:
                 f.writelines(line+"\n")
