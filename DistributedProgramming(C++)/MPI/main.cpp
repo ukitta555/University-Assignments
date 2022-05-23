@@ -1,13 +1,11 @@
 #include <math.h>
 #include <iostream>
 #include <stdio.h>
-// #include <mpi.h>
-#include <omp.h>
+#include <mpi.h>
 #include <chrono>
 
 
-// using namespace std;
-using namespace std::chrono;
+using namespace std;
 
 inline const char * const BoolToString(bool b)
 {
@@ -31,46 +29,8 @@ int main(int nargs, char* args[])
     a[counts - 1] = 500;
 
 
-    int q = 600;
-    bool f = false;
-
-    auto start = steady_clock::now();
-	for (int i = 0; i < counts; i++) {
-        int leftover = q - a[i];
-        for (int j = 0; j < counts; j++) {
-            if (a[j] == leftover) {
-                f = true;
-            }
-        }
-    }
-	auto end = steady_clock::now();
 
 
-	printf("%\nTime elapsed: %7.4f", (double)duration_cast<microseconds>(end - start).count() / 1000000.0);
-	printf("\n-------\n");
-
-
-    int part = counts / procNum;
-	double startPar = omp_get_wtime();
-	#pragma omp parallel for shared(a)
-    for (int i = 0; i < procNum; i++) {
-        int maxInd = (i + 1) * part;
-        for (int j = 0; j < counts; j++) {
-            int leftover = q - a[j];
-            for (int k = i * part; k < maxInd; k++) {
-                if (leftover == a[k]) {
-                    f = true;
-                }
-            }
-        }
-    }
-
-	double endPar = omp_get_wtime();
-    printf("%\nTime elapsed: %7.4f", endPar - startPar);
-
-
-
-    /*
     MPI_Init (&nargs, &args);
     MPI_Comm_size (MPI_COMM_WORLD, &numprocs);
     MPI_Comm_rank (MPI_COMM_WORLD, &proc_rank);
@@ -134,7 +94,6 @@ int main(int nargs, char* args[])
         int leftover = k - a[i];
         for (int j = 0; j < numbers_per_part; j++) {
             if (bufNumbers[j] == leftover) {
-                // cout << "Processor" << proc_rank << "found two-sum: " << a[i] << "+" << bufNumbers[j] << endl;
                 f = true;
             }
         }
@@ -149,7 +108,7 @@ int main(int nargs, char* args[])
     }
 
     cout << "Two-sum found: " << BoolToString(f) << endl;
-    // MPI_Finalize(); // finish MPI environment
-    */
+
+
     return 0;
 }
