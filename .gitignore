@@ -1,0 +1,6 @@
+*.xml
+*.mp3
+*.iml
+*.o
+*.x
+secret.py
