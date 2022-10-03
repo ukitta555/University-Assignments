@@ -1,0 +1,335 @@
+openapi: 3.0.0
+info:
+  description: DBMS API
+  title: DBMS API
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /database/create:
+    post:
+      description: Create an empty database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/_database_create_post_request'
+        required: true
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/_database_create_post_201_response'
+          description: Database has been created
+        "400":
+          description: An error occured during database creation.
+  /database/{databaseId}/table/create/:
+    post:
+      description: Create a new table
+      parameters:
+      - description: Database Name
+        explode: false
+        in: path
+        name: databaseId
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TableSchema'
+        required: true
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TableSchema'
+          description: Table created!
+        "400":
+          description: Such a table can't be created.
+  /database/{databaseId}/tables:
+    get:
+      description: Get all tables.
+      parameters:
+      - description: Database Name
+        explode: false
+        in: path
+        name: databaseId
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  type: object
+                type: array
+          description: Success!
+        "400":
+          description: Bad request.
+  /database/{databaseId}/table/{tableId}:
+    delete:
+      description: Drop table from database
+      parameters:
+      - description: Database Name
+        explode: false
+        in: path
+        name: databaseId
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "204":
+          description: Deletion succesful
+        "400":
+          description: An error occured during deletion.
+    get:
+      description: Get all tables.
+      parameters:
+      - description: Database Name
+        explode: false
+        in: path
+        name: databaseId
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  type: object
+                type: array
+          description: Success!
+        "400":
+          description: Bad request.
+  /database/{databaseId}/get_dump:
+    get:
+      description: Create a dump of a database
+      parameters:
+      - description: Database Name
+        explode: false
+        in: path
+        name: databaseId
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/octet-stream:
+              schema:
+                format: binary
+                type: string
+          description: Dump created and returned to the user!
+        "400":
+          description: Dump creation failed / no such database.
+  /database/read_dump:
+    post:
+      description: Read database from dump
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/_database_read_dump_post_request'
+        required: true
+      responses:
+        "201":
+          description: Database has been read from dump
+        "400":
+          description: An error occured during database creation.
+  /database/{databaseId}/table/project:
+    post:
+      description: Return a projection of a database to specific columns
+      parameters:
+      - description: Database Name
+        explode: false
+        in: path
+        name: databaseId
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TableSchema'
+        required: true
+      responses:
+        "201":
+          description: Projection successful
+        "400":
+          description: An error occured during projection operation.
+  /database/{databaseId}/table/{tableId}/edit_value:
+    patch:
+      description: Update value for specified column name and row ID.
+      parameters:
+      - description: Database Name
+        explode: false
+        in: path
+        name: databaseId
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: Table Name
+        explode: false
+        in: path
+        name: tableId
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EditValueLocation'
+        required: true
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                type: object
+          description: Update successful.
+        "400":
+          description: Bad request.
+  /database/{databaseId}/table/{tableId}/add_column:
+    patch:
+      description: Add column to specified table.
+      parameters:
+      - description: Database Name
+        explode: false
+        in: path
+        name: databaseId
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: Table Name
+        explode: false
+        in: path
+        name: tableId
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EditValueLocation'
+        required: true
+      responses:
+        "201":
+          description: Update successful.
+        "400":
+          description: Bad request.
+components:
+  parameters:
+    databaseId:
+      description: Database Name
+      explode: false
+      in: path
+      name: databaseId
+      required: true
+      schema:
+        type: string
+      style: simple
+    tableId:
+      description: Table Name
+      explode: false
+      in: path
+      name: tableId
+      required: true
+      schema:
+        type: string
+      style: simple
+  schemas:
+    ColumnType:
+      enum:
+      - char
+      - string
+      - integer
+      - real
+      - textfile
+      - integer_interval
+      title: ColumnType
+      type: string
+    TableSchema:
+      example:
+        columns:
+          key: null
+        tableName: tableName
+      properties:
+        tableName:
+          minLength: 1
+          title: tableName
+          type: string
+        columns:
+          additionalProperties:
+            $ref: '#/components/schemas/ColumnType'
+          minProperties: 1
+          title: columns
+          type: object
+      required:
+      - columns
+      - tableName
+      title: TableSchema
+      type: object
+    EditValueLocation:
+      example:
+        rowId: 1
+        columnName: columnName
+      properties:
+        rowId:
+          minimum: 1
+          title: rowId
+          type: integer
+        columnName:
+          minLength: 1
+          title: columnName
+          type: string
+      required:
+      - columnName
+      - rowId
+      title: EditValueLocation
+      type: object
+    _database_create_post_request:
+      properties:
+        databaseName:
+          minLength: 1
+          title: databaseName
+          type: string
+      required:
+      - databaseName
+      title: _database_create_post_request
+      type: object
+    _database_create_post_201_response:
+      example:
+        databaseName: databaseName
+      properties:
+        databaseName:
+          title: databaseName
+          type: string
+      title: _database_create_post_201_response
+      type: object
+    _database_read_dump_post_request:
+      properties:
+        dump:
+          format: binary
+          type: string
+      type: object

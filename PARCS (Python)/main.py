@@ -9,48 +9,45 @@ class Solver:
         self.workers = workers
 
     def solve(self):
-        array, target = self.read_input()
+        array = self.read_input()
         step = len(array) / len(self.workers)
 
         mapped = []
         for i in range(0, len(self.workers)):
-            mapped.append(self.workers[i].mymap(i * step, min((i + 1) * step, len(array) - 1), array, target))
+            mapped.append(self.workers[i].mymap(i * step, min((i + 1) * step, len(array) - 1), array))
         reduced = self.myreduce(mapped)
         self.write_output(reduced)
 
+    # [1, 2, 3, 4, 5 ,6]
     @staticmethod
     @expose
-    def mymap(a, b, array, target):
-        res = []
+    def mymap(a, b, array):
+        max_result = float('-inf')
         for fixed_element_index, fixed_element in enumerate(array[a:b + 1], a):
             if fixed_element_index + 1 < len(array):
                 for moving_element in array[fixed_element_index + 1:]:
-                    if int(fixed_element)+ int(moving_element) == int(target):
-                        res.append([fixed_element, moving_element])
-        return res
+                    if int(fixed_element) | int(moving_element) > max_result:
+                        max_result = int(fixed_element) | int(moving_element)
+        return max_result
 
     @staticmethod
     @expose
     def myreduce(mapped):
-        res = []
+        maximum = float('-inf')
         for chunk in mapped:
-            for s in chunk.value:
-                res.append(s)
-        return res
+            if chunk.value > maximum:
+                maximum = chunk.value
+        return maximum
 
     def read_input(self):
         f = open(self.input_file_name, 'r')
-        array, target = [line.strip() for line in f.readlines()]
-        array = array.split()
+        array = f.readline().strip().split()
         f.close()
-        return array, target
+        return array
 
     def write_output(self, output):
         f = open(self.output_file_name, 'w')
 
-        for result in output:
-            f.write(str(result[0]) + " ")
-            f.write(str(result[1]))
-            f.write("\n")
+        f.write(str(output))
 
         f.close()

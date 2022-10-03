@@ -1,0 +1,231 @@
+openapi: 3.0.0
+info: 
+  version: 1.0.0
+  title: DBMS API
+  description: DBMS API
+paths:
+  /database/create:
+    post:
+      description: Create an empty database
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - databaseName
+              properties:
+                databaseName:
+                  type: string
+                  minLength: 1
+      responses:
+        "201":
+          description: Database has been created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  databaseName:
+                    type: string
+        "400":
+          description: An error occured during database creation.
+  /database/{databaseId}/table/create/:
+    parameters:
+      - $ref: '#/components/parameters/databaseId'
+    post: 
+      description: Create a new table
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TableSchema'
+      responses: 
+        "201":
+          description: Table created!
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TableSchema'
+        "400":
+          description: Such a table can't be created.
+  /database/{databaseId}/tables:
+    parameters:
+        - $ref: '#/components/parameters/databaseId'
+    get:
+      description: Get all tables.
+      responses:
+        "200":
+          description: Success!
+          content:
+            application/json:
+              schema:
+                type: array
+                items: 
+                  type: object
+        "400":
+          description: Bad request.
+  /database/{databaseId}/table/{tableId}:
+    parameters:
+        - $ref: '#/components/parameters/databaseId'
+    get:
+      description: Get all tables.
+      responses:
+        "200":
+          description: Success!
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        "400":
+          description: Bad request.
+    delete:
+      description: Drop table from database
+      responses:
+        "204":
+          description: Deletion succesful
+        "400":
+          description: An error occured during deletion.      
+  /database/{databaseId}/get_dump:
+    parameters:
+      - $ref: '#/components/parameters/databaseId'
+    get:
+      description: Create a dump of a database
+      responses: 
+        "200":
+          description: Dump created and returned to the user!
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+        "400":
+          description: Dump creation failed / no such database.
+  /database/read_dump:
+    post:
+      description: Read database from dump
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                dump: 
+                  type: string
+                  format: binary
+      responses:
+        "201":
+          description: Database has been read from dump
+        "400":
+          description: An error occured during database creation.
+  /database/{databaseId}/table/project:
+    parameters:
+        - $ref: '#/components/parameters/databaseId'
+    post:
+      description: Return a projection of a database to specific columns
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TableSchema'
+      responses:
+        "201":
+          description: Projection successful
+        "400":
+          description: An error occured during projection operation.
+  /database/{databaseId}/table/{tableId}/edit_value:
+    parameters:
+        - $ref: '#/components/parameters/databaseId'
+        - $ref: '#/components/parameters/tableId'
+    patch:
+      description: Update value for specified column name and row ID.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EditValueLocation'
+      responses:
+        "201":
+          description: Update successful.
+          content:
+            application/json:
+              schema:
+                type: object
+        "400":
+          description: Bad request.
+  /database/{databaseId}/table/{tableId}/add_column:
+    parameters:
+        - $ref: '#/components/parameters/databaseId'
+        - $ref: '#/components/parameters/tableId'
+    patch:
+      description: Add column to specified table.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EditValueLocation'
+      responses:
+        "201":
+          description: Update successful.
+        "400":
+          description: Bad request.
+components:
+  schemas:
+    ColumnType:
+      type: string
+      enum:
+        - char
+        - string
+        - integer
+        - real
+        - textfile
+        - integer_interval
+    TableSchema:
+      type: object
+      required:
+        - tableName
+        - columns
+      properties:
+        tableName:
+          type: string
+          minLength: 1
+        columns:
+          type: object
+          additionalProperties:  # Schema for parameter values
+            $ref: '#/components/schemas/ColumnType'
+          minProperties: 1
+    EditValueLocation:
+      type: object
+      required:
+        - rowId
+        - columnName
+      properties: 
+        rowId:
+          type: integer
+          minimum: 1
+        columnName:
+          type: string
+          minLength: 1
+  parameters:
+    databaseId:
+      name: databaseId
+      in: path
+      description: Database Name
+      required: true
+      schema:
+        type: string
+    tableId:
+      name: tableId
+      in: path
+      description: Table Name
+      required: true
+      schema:
+        type: string
