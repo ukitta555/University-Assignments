@@ -24,5 +24,5 @@ if __name__ == '__main__':
         for part in text.split(" "):
             voice_part = AudioSegment.from_wav(f'./audio/{part}.wav')
             combined += voice_part
-
+        print(f"Generated audio representation of number {str(i)}")
         combined.export(f"./output/{str(i)}.wav", format="wav")
