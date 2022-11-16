@@ -14,13 +14,28 @@ from fastapi import FastAPI
 
 from openapi_server.apis.default_api import router as DefaultApiRouter
 from openapi_server.database.sql_alchemy import engine, BaseORMModel
+from fastapi.middleware.cors import CORSMiddleware
 
 BaseORMModel.metadata.create_all(bind=engine)
+
 
 app = FastAPI(
     title="DBMS API",
     description="DBMS API",
     version="1.0.0",
 )
+
+origins = [
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 app.include_router(DefaultApiRouter)
