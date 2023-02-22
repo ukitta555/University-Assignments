@@ -25,7 +25,7 @@ Producing new rules (R):
 2. X is smart AND teacher is not mad at X -> X passes the exam
 3. X is visits lectures AND X studies a lot -> X passes the exam
 4. X does not go to parties -> X studies a lot
-5. (X is not smart OR Teacher mad at X) AND (X doesn't attend lectures & X doesn't study a lot) -> X fails exam
+5. (X is not smart OR Teacher mad at X) AND (X doesn't attend lectures OR X doesn't study a lot) -> X fails exam
 """
 
 # Procedures (P)
