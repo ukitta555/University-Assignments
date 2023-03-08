@@ -78,7 +78,7 @@ def attends_lectures(p: Person):
         if lives_near_university_fact is True:
             return True
         elif lives_near_university_fact is False:
-            return False
+            return None
         elif lives_near_university_fact is None:
             result = lives_near_university(p)
             if result:
@@ -117,32 +117,24 @@ def will_pass_exam(p: Person):
 FACTS (F):
 
 John - smart
-Kate - does not go to parties; visits lectures
-Lia - visits lectures
-Jake - studies a lot; smart; does not go to lectures
-Chris - lives near university; studies a lot
+Kate - ???
+Lia - not smart
+Jake - smart
+Chris - ???
 """
 
-fact_dictionary: dict[Callable, dict[Person, bool]] = {
+fact_dictionary: dict[Callable, dict[Person, bool | None]] = {
     is_smart: {
         john: True,
-        jake: True
+        jake: True,
+        lia: False,
+        kate: None,
+        chris: None
     },
-    goes_to_parties: {
-        kate: False
-    },
-    attends_lectures: {
-        kate: True,
-        lia: True,
-        jake: False
-    },
-    studies_a_lot: {
-        chris: True,
-        jake: True
-    },
-    lives_near_university: {
-        chris: True
-    },
+    goes_to_parties: {},
+    attends_lectures: {},
+    studies_a_lot: {},
+    lives_near_university: {},
     teacher_angry: {}
 }
 
@@ -155,6 +147,26 @@ if __name__ == '__main__':
             fact_dictionary[teacher_angry][person] = True
         elif x == "no":
             fact_dictionary[teacher_angry][person] = False
+        elif x == "idk":
+            fact_dictionary[teacher_angry][person] = None
+
+        print(f'Does {person.name} go to parties?')
+        x = input()
+        if x == "yes":
+            fact_dictionary[goes_to_parties][person] = True
+        elif x == "no":
+            fact_dictionary[goes_to_parties][person] = False
+        elif x == "idk":
+            fact_dictionary[goes_to_parties][person] = None
+
+        print(f'Does {person.name} live near university?')
+        x = input()
+        if x == "yes":
+            fact_dictionary[lives_near_university][person] = True
+        elif x == "no":
+            fact_dictionary[lives_near_university][person] = False
+        elif x == "idk":
+            fact_dictionary[lives_near_university][person] = None
 
         will_pass = will_pass_exam(person)
         if will_pass is True:
