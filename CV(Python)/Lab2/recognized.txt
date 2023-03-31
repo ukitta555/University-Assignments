@@ -1,0 +1,8 @@
+Italso includes imperative programming, such as conditional constructs, loops, functions, etc. Hence, Bash is a powerful tool
+in Linux used for data crunching, automated backups, system administration, custom script creation, web development, and
+many more. A Bash script is a text file having the .sh as the extension.
+What is Bash Script?
+
+Bash (Bourne Again Shell) is the command language/command interpreter introduced as the shell (Bourne Shell)
+replacement. Brian Fox developed it in 1989 for the GNU Project. A Bash script contains a set of commands to automate the
+task execution.
