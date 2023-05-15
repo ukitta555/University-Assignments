@@ -1,1 +1,2 @@
 This abstract (if you could call it abstract in the first place) is done horribly bad - but I tried my best to do it in a limited amount of time I had.
+At this point I'm just keeping it as a fun memory about my undergrad days (otherwise I would be even ashamed to put it on the Internet xD).
